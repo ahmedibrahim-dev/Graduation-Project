@@ -1,0 +1,274 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<!-- doccure/search.html  30 Nov 2019 04:12:16 GMT -->
+<head id="topheader">
+    @*<style>
+        
+      .sticky {
+        position: fixed;
+        width: 100%;
+    }
+
+    </style>*@
+    <meta charset="utf-8">
+    <title>EYE CARE</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+
+    <!-- Favicons -->
+    <link rel="icon" href="~/Images/eye.png" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="~/assets/css/bootstrap.min.css">
+
+    <!-- Fontawesome CSS -->
+    <link rel="stylesheet" href="~/assets/plugins/fontawesome/css/fontawesome.min.css">
+    <link rel="stylesheet" href="~/assets/plugins/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" />
+
+
+    <!-- Datetimepicker CSS -->
+    <link rel="stylesheet" href="~/assets/css/bootstrap-datetimepicker.min.css">
+
+    <!-- Select2 CSS -->
+    <link rel="stylesheet" href="~/assets/plugins/select2/css/select2.min.css">
+
+    <!-- Fancybox CSS -->
+    <link rel="stylesheet" href="~/assets/plugins/fancybox/jquery.fancybox.min.css">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="~/assets/css/style.css">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="~/assets/js/html5shiv.min.js"></script>
+        <script src="~/assets/js/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<body>
+    <!-- Main Wrapper -->
+        <!-- Breadcrumb -->
+
+        <nav class="navbar navbar-expand-lg fixed-top navbar-dark" >
+            <div class="container">
+                <a class="navbar-brand" href="@Url.Action("Index","Home")">
+                    <img src="~/Images/eye.png" class="imglogo" />
+                    EYE CARE
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="@Url.Action("Index","Home")">Home<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="@Url.Action("About","Home")">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="@Url.Action("Index","Booking")">Doctors</a>
+                        </li>
+                        <li class="nav-item">
+                           @* <a class="nav-link" href="@Url.Action("Index","Store")">Store</a>*@
+                            <a class="nav-link" href="~/Store/Index">Store</a>
+                        </li>
+                        @Html.Partial("_LoginPartial")
+                        @*<li class="nav-item">
+                            <a class="nav-link" href="@Url.Action("LogIn","Account")">LogIn / SignUp</a>
+                        </li>*@
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- /Breadcrumb -->
+        <!-- Page Content -->
+        <div class="content">
+            @RenderBody()
+        </div>
+        <!-- /Page Content -->
+        <!-- Start footer SECTION -->
+        <footer class="text-white text-lg-start">
+            <div class="p-4">
+                <!--Grid row-->
+                <div class="row p-2">
+                    <!--Grid column-->
+                    <div class="col-lg-3 col-md-12 mb-4 mb-md-0">
+                        <h3 class="text-uppercase footerh">Footer Content</h3>
+                        <p class="pfooter">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        </p>
+                        <ul class="list-unstyled">
+                            <li class="mt-4 pt-4">
+                                <a href="www.linkedin.com" class="text-white pr-2"><i class="fa fa-linkedin"></i></a>
+                                <a href="www.facebook.com" class="text-white pr-2"><i class="fa fa-facebook-square"></i></a>
+                                <a href="www.twitter.com" class="text-white pr-2"><i class="fa fa-twitter"></i></a>
+                                <a href="www.instagram.com" class="text-white pr-2"><i class="fa fa-instagram"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--Grid column-->
+                    <!--Grid column-->
+                    <div class="col-lg-3 col-md-12 mb-4 mb-md-0">
+                        <h3 class="text-uppercase footerh">For Doctors</h3>
+                        <ul class="list-unstyled mb-0">
+                            <li>
+                                <i class="fa fa-angle-double-right"></i>
+                                <a href="#!" class="text-white">Link 1</a>
+                            </li>
+                            <li>
+                                <i class="fa fa-angle-double-right"></i>
+                                <a href="#!" class="text-white">Link 2</a>
+                            </li>
+                            <li>
+                                <i class="fa fa-angle-double-right"></i>
+                                <a href="#!" class="text-white">Link 3</a>
+                            </li>
+                            <li>
+                                <i class="fa fa-angle-double-right"></i>
+                                <a href="#!" class="text-white">Link 4</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-12 mb-4 mb-md-0">
+                        <h3 class="text-uppercase footerh">For Patients</h3>
+                        <ul class="list-unstyled">
+                            <li>
+                                <i class="fa fa-angle-double-right"></i>
+                                <a href="#!" class="text-white">Link 1</a>
+                            </li>
+                            <li>
+                                <i class="fa fa-angle-double-right"></i>
+                                <a href="#!" class="text-white">Link 2</a>
+                            </li>
+                            <li>
+                                <i class="fa fa-angle-double-right"></i>
+                                <a href="#!" class="text-white">Link 3</a>
+                            </li>
+                            <li>
+                                <i class="fa fa-angle-double-right"></i>
+                                <a href="#!" class="text-white">Link 4</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-12 mb-4 mb-md-0">
+                        <h3 class="text-uppercase mb-0 footerh">Contact us</h3>
+
+                        <ul class="list-unstyled">
+                            <li>
+                                <i class="fa fa-map-marker"></i>
+                                <p class="text-white">3523Lorem ipsum dolor sit amet</p>
+                            </li>
+                            <li>
+                                <i class="fa fa-phone"></i>
+                                <p class="text-white">+02 12345678</p><br />
+                                <p class="text-white" style="padding-left:30px;">+02 11251111</p>
+                            </li>
+                            <li>
+                                <i class="fa fa-envelope"></i>
+                                <p class="text-white">EyeCare@gmail.com</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="scrolltop float-right">
+                    <i class="fa fa-arrow-circle-up" id="myBtn"></i>
+                </div>
+            </div>
+            <!-- Copyright -->
+            <div class="text-center p-3 divcopyright" style="background-color: rgba(0, 0, 0, 0.2)">
+                © 2021 Copyright:
+                <a class="text-white text-uppercase" href="#">Eye care.com</a>
+            </div>
+            <!-- Copyright -->
+        </footer>
+        <!-- Start footer SECTION -->
+    <!-- /Main Wrapper -->
+    <!-- jQuery -->
+    <script src="~/assets/js/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JS -->
+    <script src="~/assets/js/popper.min.js"></script>
+    <script src="~/assets/js/bootstrap.min.js"></script>
+
+    <!-- Sticky Sidebar JS -->
+    <script src="~/assets/plugins/theia-sticky-sidebar/ResizeSensor.js"></script>
+    <script src="~/assets/plugins/theia-sticky-sidebar/theia-sticky-sidebar.js"></script>
+
+    <!-- Select2 JS -->
+    <script src="~/assets/plugins/select2/js/select2.min.js"></script>
+
+    <!-- Datetimepicker JS -->
+    <script src="~/assets/js/moment.min.js"></script>
+    <script src="~/assets/js/bootstrap-datetimepicker.min.js"></script>
+
+    <!-- Fancybox JS -->
+    <script src="~/assets/plugins/fancybox/jquery.fancybox.min.js"></script>
+    <script src="~/assets/js/circle-progress.min.js"></script>
+    <!-- Custom JS -->
+    <script src="~/assets/js/script.js"></script>
+    <!-- counterup Function -->
+    <script src="~/JS/jquery.counterup.min.js"></script>
+    <!--******************* JS ******************-->
+    <script src="~/JS/MyJS.js"></script>
+    <script src="~/Scripts/jquery.validate.min.js"></script>
+    <script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+    <script src="~/Scripts/toastr.min.js"></script>
+    <!--******************* JS ******************-->
+    @RenderSection("scripts", required: false)
+
+</body>
+<!-- doccure/search.html  30 Nov 2019 04:12:16 GMT -->
+</html>
+
+
+
+
+
+@* ============================================================================================== *@
+@*<!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>@ViewBag.Title - My ASP.NET Application</title>
+        @Styles.Render("~/Content/css")
+        @Scripts.Render("~/bundles/modernizr")
+
+    </head>
+    <body>
+        <div class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    @Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                        <li>@Html.ActionLink("About", "About", "Home")</li>
+                        <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                    </ul>
+                    @Html.Partial("_LoginPartial")
+                </div>
+            </div>
+        </div>
+        <div class="container body-content">
+            @RenderBody()
+            <hr />
+            <footer>
+                <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+            </footer>
+        </div>
+
+        @Scripts.Render("~/bundles/jquery")
+        @Scripts.Render("~/bundles/bootstrap")
+        @RenderSection("scripts", required: false)
+    </body>
+    </html>*@

@@ -1,0 +1,211 @@
+﻿@model EyeCare.Web.ViewModel.SellerViewModel
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Areas/CMS/Views/Shared/_Layout.cshtml";
+}
+<!-- Page Header -->
+<div class="page-header">
+    <div class="row">
+        <div class="col-sm-12">
+            <h3 class="page-title">Sellers</h3>
+            <ul class="breadcrumb">
+                <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
+                <li class="breadcrumb-item"><a href="javascript:(0);">Users</a></li>
+                <li class="breadcrumb-item active">Seller</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- /Page Header -->
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" style="margin-bottom:50px;font-weight:bold;font-size:20px">
+    New Seller
+</button>
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel" style="color:#0a3d62">New Seller</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <!-- Checkout Form -->
+                <form id="formSeller">
+                    <!-- Personal Information -->
+                    <div class="info-widget">
+                        <h4 class="card-title">Please Enter Seller Data</h4>
+                        <div class="container">
+                            @Html.HiddenFor(modal => modal.SellerId)
+                            <div class="form-group card-label col-md-12">
+                                @Html.LabelFor(model => model.SellerName)
+                                @Html.TextBoxFor(model => model.SellerName, new { @class = "form-control" })
+                                @Html.ValidationMessageFor(model => model.SellerName, null, new { @class = "text-danger" })
+                            </div>
+                            <div class="form-group card-label col-md-12">
+                                @Html.LabelFor(model => model.SellerEmail)
+                                @Html.TextBoxFor(model => model.SellerEmail, new { @class = "form-control" })
+                                @Html.ValidationMessageFor(model => model.SellerEmail, null, new { @class = "text-danger" })
+                            </div>
+                            <div class="form-group card-label col-md-12">
+                                @Html.LabelFor(model => model.SellerStoreName)
+                                @Html.TextBoxFor(model => model.SellerStoreName, new { @class = "form-control" })
+                                @Html.ValidationMessageFor(model => model.SellerStoreName, null, new { @class = "text-danger" })
+                            </div>
+                            <div class="form-group card-label col-md-12">
+                                @Html.LabelFor(model => model.SellerStoreAddress)
+                                @Html.TextBoxFor(model => model.SellerStoreAddress, new { @class = "form-control" })
+                                @Html.ValidationMessageFor(model => model.SellerStoreAddress, null, new { @class = "text-danger" })
+                            </div>
+                            <div class="form-group card-label col-md-12">
+                                @Html.LabelFor(model => model.SellerStorePhone)
+                                @Html.TextBoxFor(model => model.SellerStorePhone, new { @class = "form-control" })
+                                @Html.ValidationMessageFor(model => model.SellerStorePhone, null, new { @class = "text-danger" })
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /Personal Information -->
+                </form>
+                <!-- /Checkout Form -->
+            </div>
+            <div class="modal-footer">
+                <button id="btnSave" type="button" class="btn btn-primary">Add</button>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="divSellerDetails"></div>
+
+
+
+@* --------Scripts-------- *@
+@section scripts{
+    <script>
+        $(document).ready(function () {
+            loadSellerDetails();
+            $("#btnSave").click(function () {
+                if (!$("#formSeller").valid()) {
+                    return;
+                }
+                saveSellerData();
+            });
+        });
+        //------------Load-Data--------------------//
+        function loadSellerDetails() {
+            $.ajax({
+                async: true,
+                data: 'GET',
+                dataType: 'HTML',
+                contentType: false,
+                processData: false,
+                url: '/CMS/Seller/GetSellers',
+                success: function (data) {
+                    $("#divSellerDetails").html(data);
+                },
+                error: function () {
+                    toastr.error('There is some problem to process your request', 'Error Alert', { timeOut: 3000 });
+                    //alert('There is some problem to process your request');
+                }
+            })
+        }
+        //------------Load-Data--------------------//
+        //------------Reset-Modal-----------------//
+        function resetModal() {
+            debugger;
+            $("#SellerId").val(0);
+            $("#SellerName").val('');
+            $("#SellerEmail").val('');
+            $("#SellerStoreName").val('');
+            $("#SellerStoreAddress").val('');
+            $("#SellerStorePhone").val('');
+        }
+        //------------Reset-Modal----------------//
+        //------------Save-Seller-----------------//
+        function saveSellerData() {
+            debugger;
+            var seller = {};
+            seller.SellerId = $("#SellerId").val();
+            seller.SellerName = $('#SellerName').val();
+            seller.SellerEmail = $('#SellerEmail').val();
+            seller.SellerStoreName = $('#SellerStoreName').val();
+            seller.SellerStoreAddress = $('#SellerStoreAddress').val();
+            seller.SellerStorePhone = $('#SellerStorePhone').val();
+            $.ajax({
+                url: '/CMS/Seller/Add',
+                type: 'POST',
+                data: { Seller: seller },
+                success: function (data) {
+                    debugger;
+                    if (data.success === true) {
+                        toastr.success(data.message, 'Success Alert', { timeOut: 3000 });
+                        //alert(data.message);
+                        resetModal();
+                        loadSellerDetails();
+                    }
+                },
+                error: function () {
+                    toastr.error('There is some problem to process your request', 'Error Alert', { timeOut: 3000 });
+                   // alert('There Is Some Problem To Save  Data')
+                }
+            });
+        }
+        //------------Save-Seller-----------------//
+        //------------- Edit-----------------------//
+        function editeSeller(sellerId) {
+            $.ajax({
+                async: true,
+                type: 'GET',
+                dataType: 'JSON',
+                contentType: 'application/json; charset=utf-8',
+                data: { sellerId: sellerId },
+                url: '/CMS/Seller/EditSeller',
+                success: function (data) {
+                    debugger;
+                    $("#SellerId").val(data.SellerId);
+                    $("#SellerName").val(data.SellerName);
+                    $("#SellerEmail").val(data.Email);
+                    $("#SellerStoreName").val(data.SellerStoreName);
+                    $("#SellerStoreAddress").val(data.SellerStoreAddress);
+                    $("#SellerStorePhone").val(data.SellerStorePhone);                
+                    $("#exampleModal").modal({ show: true });
+                },
+                error: function () {
+                    toastr.error('There is some problem to process your request', 'Error Alert', { timeOut: 3000 });
+                    //alert('There is some problem to process your request');
+                }
+            });
+        }
+        //--------------Delete--------------------//
+        function deleteSeller(sellerId) {
+            var result = confirm('Are You Sure To Delete');
+            if (result === false) {
+                return false;
+            }
+            $.ajax({
+
+                async: true,
+                type: 'GET',
+                dataType: 'JSON',
+                contentType: 'application/json; charset=utf-8',
+                data: { sellerId: sellerId },
+                url: '/CMS/Seller/DeleteSellerDetails',
+                success: function (data) {
+                    debugger;
+                    if (data.success === true) {
+                        toastr.error(data.message, 'Delete Alert', { timeOut: 3000 });
+                        //alert(data.message);
+                        loadSellerDetails();
+                    }
+                },
+                error: function () {
+                    toastr.error('There is some problem to process your request', 'Error Alert', { timeOut: 3000 });
+                    //alert('There is some problem to process your request');
+
+                }
+            });
+        }
+    </script>
+}

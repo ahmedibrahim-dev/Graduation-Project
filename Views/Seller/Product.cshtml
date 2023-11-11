@@ -1,0 +1,208 @@
+﻿
+@{
+    ViewBag.Title = "Product";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-5 col-lg-4 col-xl-3 theiaStickySidebar">
+
+            <!-- Profile Sidebar -->
+            <div class="profile-sidebar">
+                <div class="widget-profile pro-widget-content">
+                    <div class="profile-info-widget">
+                        <a href="@Url.Action("SellerProfile","Seller")" class="booking-doc-img">
+                            <img src="~/Images/michal-parzuchowski-S7nzSaoMQi4-unsplash.jpg" alt="User Image">
+                        </a>
+                        <div class="profile-det-info">
+                            <h3>Darren Elder</h3>
+
+                            <div class="patient-details">
+                                <h5 class="mb-0">Glasses Shop 1</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="dashboard-widget">
+                    <nav class="dashboard-menu">
+                        <ul>
+                            <li>
+                                <a href="@Url.Action("Index","Seller")">
+                                    <i class="fas fa-columns"></i>
+                                    <span>Dashboard</span>
+                                </a>
+                            </li>
+                            <li class="active">
+                                <a href="@Url.Action("Product","Seller")">
+                                    <i class="fab fa-product-hunt"></i>
+                                    <span>Products</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="@Url.Action("Order","Seller")">
+                                    <i class="fas fa-shipping-fast"></i>
+                                    <span>Orders</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="@Url.Action("SellerProfile","Seller")">
+                                    <i class="fas fa-user-cog"></i>
+                                    <span>Profile Settings</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="@Url.Action("LogIn","Account")">
+                                    <i class="fas fa-sign-out-alt"></i>
+                                    <span>Logout</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <!-- /Profile Sidebar -->
+        </div>
+        <!-- Button trigger modal -->
+        <div class="col-md-7 col-lg-8 col-xl-9">
+            <div class="row">
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" style="margin-bottom:50px;font-weight:bold;font-size:20px">
+                    New Product
+                </button>
+                <div class="col-md-12">
+                    <h4 class="mb-4">Products List</h4>
+                    <div class="appointment-tab">
+                        <!-- /Appointment Tab -->
+
+                        <div class="tab-content">
+
+                            <!-- Upcoming Appointment Tab -->
+                            <div class="tab-pane show active" id="upcoming-appointments">
+                                <div class="card card-table mb-0">
+                                    <div class="card-body">
+                                        <div class="table-responsive">
+                                            <table class="table table-hover table-center mb-0">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Product Code</th>
+                                                        <th>Product Name</th>
+                                                        <th>Type</th>
+                                                        <th class="text-center">Quantity</th>
+                                                        <th class="text-center">Product Price</th>
+                                                        <th class="text-center">Action</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>#d1254</td>
+                                                        <td>
+                                                            <h2 class="table-avatar">
+                                                                <a class="avatar avatar-sm mr-2"><img class="avatar-img rounded-circle" src="~/Store/images/160415121059-contact-lens-prices-640x360.jpg" alt="User Image"></a>
+                                                                <a>Glass</a>
+                                                            </h2>
+                                                        </td>
+                                                        <td>Eye Care</td>
+                                                        <td class="text-center">5</td>
+                                                        <td class="text-center">150 $</td>
+                                                        <td class="text-center">
+                                                            <div class="table-action">
+                                                                <a href="javascript:void(0);" class="btn btn-sm bg-primary-light" data-toggle="modal" data-target="#exampleModal1">
+                                                                    <i class="fas fa-pen"></i> Edite
+                                                                </a>
+                                                                <a href="javascript:void(0);" class="btn btn-sm bg-danger-light">
+                                                                    <i class="fas fa-times"></i> Delete
+                                                                </a>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /Upcoming Appointment Tab -->
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel" style="color:#0a3d62">New Product</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <!-- Checkout Form -->
+                        <form>
+
+                            <!-- Personal Information -->
+                            <div class="info-widget">
+                                <h4 class="card-title">Please Enter Product Data</h4>
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <div class="form-group card-label">
+                                            <label>Code</label>
+                                            <input class="form-control" type="text">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12">
+                                        <div class="form-group card-label">
+                                            <label>Product Name</label>
+                                            <input class="form-control" type="text">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12">
+                                        <div class="form-group card-label">
+                                            <label>Type</label>
+                                            <input class="form-control" type="text">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12">
+                                        <div class="form-group card-label">
+                                            <label>Quantity</label>
+                                            <input class="form-control" type="text">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12">
+                                        <div class="form-group card-label">
+                                            <label>Price Per Piece</label>
+                                            <input class="form-control" type="text">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12 ">
+                                        <div class="form-group card-label">
+                                            <label>Profile Image</label>
+                                            <input id="UploadImage" type="file" class="form-control" name="roomImage" title="Load Image" onchange="DisplayImage(this)" />
+                                            <img id="imgRoom" height="100" width="100" style="border:2px solid aqua" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /Personal Information -->
+                        </form>
+                        <!-- /Checkout Form -->
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary">Add</button>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="displayProductDetails"></div>
+    </div>
+</div>
+@section scripts{
+
+}
+
+
+

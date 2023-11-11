@@ -1,0 +1,242 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+  <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-5 col-lg-4 col-xl-3 theiaStickySidebar">
+
+                        <!-- Profile Sidebar -->
+                        <div class="profile-sidebar">
+                            <div class="widget-profile pro-widget-content">
+                                <div class="profile-info-widget">
+                                    <a href="@Url.Action("SellerProfile","Seller")" class="booking-doc-img">
+                                        <img src="~/Images/michal-parzuchowski-S7nzSaoMQi4-unsplash.jpg" alt="User Image">
+                                    </a>
+                                    <div class="profile-det-info">
+                                        <h3>Darren Elder</h3>
+
+                                        <div class="patient-details">
+                                            <h5 class="mb-0">Glasses Shop 1</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="dashboard-widget">
+                                <nav class="dashboard-menu">
+                                    <ul>
+                                        <li class="active">
+                                            <a href="@Url.Action("Index","Seller")">
+                                                <i class="fas fa-columns"></i>
+                                                <span>Dashboard</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="@Url.Action("Product","Seller")">
+                                                <i class="fab fa-product-hunt"></i>
+                                                <span>Products</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="@Url.Action("Order","Seller")">
+                                                <i class="fas fa-shipping-fast"></i>
+                                                <span>Orders</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="@Url.Action("SellerProfile","Seller")">
+                                                <i class="fas fa-user-cog"></i>
+                                                <span>Profile Settings</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="@Url.Action("LogIn","Account")">
+                                                <i class="fas fa-sign-out-alt"></i>
+                                                <span>Logout</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                        <!-- /Profile Sidebar -->
+
+                    </div>
+
+                    <div class="col-md-7 col-lg-8 col-xl-9">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="card dash-card">
+                                    <div class="card-body">
+                                        <div class="row">                                         
+                                            <div class="col-md-12 col-lg-4">
+                                                <div class="dash-widget dct-border-rht">
+                                                    <div class="circle-bar circle-bar2">
+                                                        <div class="circle-graph2" data-percent="65">
+                                                            <img src="~/assets/img/tracking.png" class="img-fluid" alt="Patient" style="height:50px; width:50%">
+                                                        </div>
+                                                    </div>
+                                                    <div class="dash-widget-info">
+                                                        <h6>Shipped Orders</h6>
+                                                        <h3>160</h3>
+                                                        <p class="text-muted">10, Aug 2021</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-12 col-lg-4">
+                                                <div class="dash-widget">
+                                                    <div class="circle-bar circle-bar3">
+                                                        <div class="circle-graph3" data-percent="50">
+                                                            <img src="~/assets/img/box.png" class="img-fluid" alt="Patient" style="height:50px; width:50%">
+                                                        </div>
+                                                    </div>
+                                                    <div class="dash-widget-info">
+                                                        <h6>Total Orders</h6>
+                                                        <h3>85</h3>
+                                                        <p class="text-muted">10, Aug 2021</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12 col-lg-4">
+                                                <div class="dash-widget dct-border-rht">
+                                                    <div class="circle-bar circle-bar1">
+                                                        <div class="circle-graph1" data-percent="75">
+                                                            <img src="~/assets/img/product.png" class="img-fluid" alt="patient" style="height:50px; width:50%">
+                                                        </div>
+                                                    </div>
+                                                    <div class="dash-widget-info">
+                                                        <h6>Total Products</h6>
+                                                        <h3>1500</h3>
+                                                        <p class="text-muted">Till Today</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h4 class="mb-4">Clients Orders</h4>
+                                <div class="appointment-tab">
+
+                                    <!-- Appointment Tab -->
+                                    <!--<ul class="nav nav-tabs nav-tabs-solid nav-tabs-rounded">
+                                        <li class="nav-item">
+                                            <a class="nav-link active todyupcoming" href="#upcoming-appointments" data-toggle="tab">Upcoming</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link todyupcoming" href="#today-appointments" data-toggle="tab" style="color:black">Today</a>
+                                        </li>
+                                    </ul>-->
+                                    <!-- /Appointment Tab -->
+
+                                    <div class="tab-content">
+
+                                        <!-- Upcoming Appointment Tab -->
+                                        <div class="tab-pane show active" id="upcoming-appointments">
+                                            <div class="card card-table mb-0">
+                                                <div class="card-body">
+                                                    <div class="table-responsive">
+                                                        <table class="table table-hover table-center mb-0">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th>Client Name</th>
+                                                                    <th>Order Date</th>
+                                                                    <th>Product Code</th>
+                                                                    <th>Type</th>
+                                                                    <th>Action</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>
+                                                                        <h2 class="table-avatar">
+                                                                            <a class="avatar avatar-sm mr-2"><img class="avatar-img rounded-circle" src="~/assets/img/patients/patient.jpg" alt="User Image"></a>
+                                                                            <a>Richard Wilson <span>#PT0016</span></a>
+                                                                        </h2>
+                                                                    </td>
+                                                                    <td>11 Nov 2021 <span class="d-block text-info">10.00 AM</span></td>
+                                                                    <td>#d1254</td>
+                                                                    <td>Glasses</td>
+                                                                    <td>
+                                                                        <div class="table-action">
+                                                                            <a href="javascript:void(0);" class="btn btn-sm bg-info-light" data-toggle="modal" data-target="#appt_details">
+                                                                                <i class="far fa-eye"></i> View
+                                                                            </a>
+
+                                                                            <a href="javascript:void(0);" class="btn btn-sm bg-success-light">
+                                                                                <i class="fas fa-check"></i> Accept
+                                                                            </a>
+                                                                            <a href="javascript:void(0);" class="btn btn-sm bg-danger-light">
+                                                                                <i class="fas fa-times"></i> Cancel
+                                                                            </a>
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- /Upcoming Appointment Tab -->
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+<!-- Appointment Details Modal -->
+<div class="modal fade custom-modal" id="appt_details">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Order Details</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <ul class="info-details">
+                    <li>
+                        <div class="details-header">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <span class="title">Order Date</span>
+                                    <span class="text">11 Nov 2021</span>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="text-right">
+                                        <button type="button" class="btn bg-success-light btn-sm" id="topup_status">Completed</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="title">Confirm Date:</span>
+                        <span class="text">15 Nov 2021</span>
+                    </li>
+                    <li>
+                        <span class="title">Request Qty:</span>
+                        <span class="text">3</span>
+                    </li>
+
+                    <li>
+                        <span class="title">Total Price:</span>
+                        <span class="text">2000 $</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,235 @@
+﻿@model EyeCare.Web.ViewModel.DoctorViewModel
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Areas/CMS/Views/Shared/_Layout.cshtml";
+}
+<!-- Page Header -->
+<div class="page-header">
+    <div class="row">
+        <div class="col-sm-12">
+            <h3 class="page-title">Doctors</h3>
+            <ul class="breadcrumb">
+                <li class="breadcrumb-item"><a href="@Url.Action("Index","Home")">Dashboard</a></li>
+                <li class="breadcrumb-item"><a href="@Url.Action("Index","Doctor")">Users</a></li>
+                <li class="breadcrumb-item active">Doctor</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- /Page Header -->
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" style="margin-bottom:50px;font-weight:bold;font-size:20px">
+    New Doctor
+</button>
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel" style="color:#0a3d62">New Doctor</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <!-- Checkout Form -->
+                <form id="formDoctor">
+                    <!-- Personal Information -->
+                    <div class="info-widget">
+                        <h4 class="card-title">Please Enter Doctor Data</h4>
+                        <div class="container">
+                            @Html.HiddenFor(modal => modal.DoctorId)
+                            <div class="form-group card-label col-md-12">
+                                @Html.LabelFor(model => model.DoctorName)
+                                @Html.TextBoxFor(model => model.DoctorName, new { @class = "form-control" })
+                                @Html.ValidationMessageFor(model => model.DoctorName, null, new { @class = "text-danger" })
+                            </div>
+                            <div class="form-group card-label col-md-12">
+                                @Html.LabelFor(model => model.DoctorBirthDate)
+                                @Html.TextBoxFor(model => model.DoctorBirthDate, new {@type = "date", @class = "form-control"})
+                                @Html.ValidationMessageFor(model => model.DoctorBirthDate, null, new { @class = "text-danger" })
+                            </div>
+                            <div class="form-group card-label col-md-12">
+                                @Html.LabelFor(model => model.DoctorPhone)
+                                @Html.TextBoxFor(model => model.DoctorPhone, new { @class = "form-control"})
+                                @Html.ValidationMessageFor(model => model.DoctorPhone, null, new { @class = "text-danger" })
+                            </div>
+                            <div class="form-group card-label col-md-12">
+                                @Html.LabelFor(model => model.DoctorEmail)
+                                @Html.TextBoxFor(model => model.DoctorEmail, new { @class = "form-control"})
+                                @Html.ValidationMessageFor(model => model.DoctorEmail, null, new { @class = "text-danger" })
+                            </div>
+                            <div class="form-group card-label col-md-12">
+                                <select class="form-control" id="DoctorGender" name="DoctorGender">
+                                    <option value="0">Male</option>
+                                    <option value="1">Female</option>
+                                </select>
+                            </div>
+                            <div class="form-group card-label col-md-12">
+                                @Html.LabelFor(model => model.Clinic.ClinicName)
+                                @Html.TextBoxFor(model => model.Clinic.ClinicName, new { @class = "form-control", @id = "ClinicName" })
+                                @Html.ValidationMessageFor(model => model.Clinic.ClinicName, null, new { @class = "text-danger" })
+                            </div>
+                            <div class="form-group card-label col-md-12">
+                                @Html.LabelFor(model => model.Clinic.ClinicAddress)
+                                @Html.TextBoxFor(model => model.Clinic.ClinicAddress, new { @class = "form-control", @id = "ClinicAddress" })
+                                @Html.ValidationMessageFor(model => model.Clinic.ClinicAddress, null, new { @class = "text-danger" })
+                            </div>
+                            <div class="form-group card-label col-md-12">
+                                @Html.LabelFor(model => model.Clinic.ClinicPhone)
+                                @Html.TextBoxFor(model => model.Clinic.ClinicPhone, new { @class = "form-control", @id = "ClinicPhone" })
+                                @Html.ValidationMessageFor(model => model.Clinic.ClinicPhone, null, new { @class = "text-danger" })
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- /Personal Information -->
+                </form>
+                <!-- /Checkout Form -->
+            </div>
+            <div class="modal-footer">
+                <button id="btnSave" type="button" class="btn btn-primary">Add</button>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="divDoctorDetails"></div>
+
+@section scripts{
+    <script>
+        $(document).ready(function () {
+            loadDoctorDetails();
+            $("#btnSave").click(function () {
+                if (!$("#formDoctor").valid()) {
+                    return;
+                }
+                SaveDoctor();
+            });
+        });
+        //------------Load-Data--------------------//
+        function loadDoctorDetails() {
+            $.ajax({
+                async: true,
+                data: 'GET',
+                dataType: 'HTML',
+                contentType: false,
+                processData: false,
+                url: '/CMS/Doctor/GetDoctors',
+                success: function (data) {
+                    $("#divDoctorDetails").html(data);
+                },
+                error: function () {
+                    toastr.error('There is some problem to process your request', 'Error Alert', { timeOut: 3000 });
+                    //alert('There is some problem to process your request');
+                }
+            })
+        }
+        //------------Load-Data--------------------//
+        //------------Save-Doctor-----------------//
+        function SaveDoctor() {
+            debugger;
+            var doctor = {};
+            var clinic = {};
+            doctor.DoctorId = $("#DoctorId").val();
+            doctor.DoctorName = $('#DoctorName').val();
+            doctor.DoctorBirthDate = $('#DoctorBirthDate').val();
+            doctor.DoctorPhone = $('#DoctorPhone').val();
+            doctor.DoctorEmail = $('#DoctorEmail').val();
+            doctor.DoctorGender = $('#DoctorGender').val();
+            clinic.ClinicName = $('#ClinicName').val();
+            clinic.ClinicAddress = $('#ClinicAddress').val();
+            clinic.ClinicPhone = $('#ClinicPhone').val();
+
+            doctor.Clinic = clinic
+
+
+            $.ajax({
+                url: '/CMS/Doctor/Add',
+                type: 'POST',
+                data: { Doctor: doctor },
+                success: function (data) {
+                    debugger;
+                    if (data.success === true) {
+                        toastr.success(data.message, 'Success Alert', { timeOut: 3000 });
+                        //alert(data.message);
+                        resetDoctorModal();
+                        loadDoctorDetails();
+                    }
+                },
+                error: function () {
+                    toastr.error('There is some problem to process your request', 'Error Alert', { timeOut: 3000 });
+                    //alert('There Is Some Problem To Save  Data')
+                }
+            });
+        }
+        //------------Save-Doctor-----------------//
+        function resetDoctorModal() {
+            debugger;
+            $("#DoctorId").val(0);
+            $("#DoctorName").val('');
+            $("#DoctorBirthDate").val('');
+            $("#DoctorPhone").val('');
+            $("#DoctorEmail").val('');
+            $("#ClinicName").val('');
+            $("#ClinicAddress").val('');
+            $("#ClinicPhone").val('');
+        }
+
+        //------------- Edit-----------------------
+        function editeDoctor(doctorId) {
+            $.ajax({
+                async: true,
+                type: 'GET',
+                dataType: 'JSON',
+                contentType: 'application/json; charset=utf-8',
+                data: { doctorId: doctorId },
+                url: '/CMS/Doctor/EditeDoctor',
+                success: function (data) {
+                    debugger;
+                    $("#DoctorId").val(data.DoctorId);
+                    $("#DoctorName").val(data.DoctorName);
+                    $("#DoctorBirthDate").val(data.DoctorBirthDate);
+                    $("#DoctorPhone").val(data.DoctorPhone);
+                    $("#DoctorEmail").val(data.Email);
+                    $("#ClinicName").val(data.ClinicName);
+                    $("#ClinicAddress").val(data.ClinicAddress);
+                    $("#ClinicPhone").val(data.ClinicPhone);
+                    $("#exampleModal").modal({ show: true });
+                },
+                error: function () {
+                    toastr.error('There is some problem to process your request', 'Error Alert', {timeOut: 3000});
+                }
+            });
+        }
+        //--------------Delete--------------------//
+        function deleteDoctor(doctorId) {
+            var result = confirm('Are You Sure To Delete');
+            if (result === false) {
+                return false;
+            }
+            $.ajax({
+
+                async: true,
+                type: 'GET',
+                dataType: 'JSON',
+                contentType: 'application/json; charset=utf-8',
+                data: { doctorId: doctorId },
+                url: '/CMS/Doctor/DeleteDoctorDetails',
+                success: function (data) {
+                    debugger;
+                    if (data.success === true) {
+                        toastr.error(data.message, 'Delete Alert', { timeOut: 3000 });
+                        //alert(data.message);
+                        loadDoctorDetails();
+                    }
+                },
+                error: function () {
+                    toastr.error('There is some problem to process your request', 'Error Alert', { timeOut: 3000 });;
+
+                }
+            });
+        }
+    </script>
+}
+

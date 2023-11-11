@@ -1,0 +1,145 @@
+﻿
+@{
+    ViewBag.Title = "SellerProfile";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-5 col-lg-4 col-xl-3 theiaStickySidebar">
+
+            <!-- Profile Sidebar -->
+            <div class="profile-sidebar">
+                <div class="widget-profile pro-widget-content">
+                    <div class="profile-info-widget">
+                        <a href="@Url.Action("SellerProfile","Seller")" class="booking-doc-img">
+                            <img src="~/Images/michal-parzuchowski-S7nzSaoMQi4-unsplash.jpg" alt="User Image">
+                        </a>
+                        <div class="profile-det-info">
+                            <h3>Darren Elder</h3>
+
+                            <div class="patient-details">
+                                <h5 class="mb-0">Glasses Shop 1</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="dashboard-widget">
+                    <nav class="dashboard-menu">
+                        <ul>
+                            <li>
+                                <a href="@Url.Action("Index","Seller")">
+                                    <i class="fas fa-columns"></i>
+                                    <span>Dashboard</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="@Url.Action("Product","Seller")">
+                                    <i class="fab fa-product-hunt"></i>
+                                    <span>Products</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="@Url.Action("Order","Seller")">
+                                    <i class="fas fa-shipping-fast"></i>
+                                    <span>Orders</span>
+                                </a>
+                            </li>
+                            <li class="active">
+                                <a href="@Url.Action("SellerProfile","Seller")">
+                                    <i class="fas fa-user-cog"></i>
+                                    <span>Profile Settings</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="@Url.Action("LogIn","Account")">
+                                    <i class="fas fa-sign-out-alt"></i>
+                                    <span>Logout</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <!-- /Profile Sidebar -->
+
+        </div>
+        <div class="col-md-7 col-lg-8 col-xl-9">
+
+            <!-- Basic Information -->
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="card-title">Basic Information</h4>
+                    <div class="row form-row">
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <div class="change-avatar">
+                                    <div class="profile-img">
+                                        <img src="~/Images/michal-parzuchowski-S7nzSaoMQi4-unsplash.jpg" alt="User Image">
+                                    </div>
+                                    <div class="upload-img">
+                                        <div class="change-photo-btn">
+                                            <span><i class="fa fa-upload"></i> Upload Photo</span>
+                                            <input type="file" class="upload">
+                                        </div>
+                                        <small class="form-text text-muted">Allowed JPG, GIF or PNG. Max size of 2MB</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label>Username <span class="text-danger">*</span></label>
+                                <input type="text" class="form-control" readonly value="Darren Elder">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label>Email <span class="text-danger">*</span></label>
+                                <input type="email" class="form-control" readonly value="S1@gmail.com">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label>Name <span class="text-danger">*</span></label>
+                                <input type="text" class="form-control" value="Darren Elder">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label>Phone Number <span class="text-danger">*</span></label>
+                                <input type="tel" class="form-control" value="01212">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /Basic Information -->
+            <!-- Clinic Info -->
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="card-title">Store Info</h4>
+                    <div class="row form-row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label>Store Name <span class="text-danger">*</span></label>
+                                <input type="text" class="form-control" value="Glasses Shop 1">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label>Store Address <span class="text-danger">*</span></label>
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /Clinic Info -->
+            <div class="submit-section submit-btn-bottom">
+                <button type="submit" class="btn btn-primary submit-btn">Save Changes</button>
+            </div>
+
+        </div>
+    </div>
+</div>
+

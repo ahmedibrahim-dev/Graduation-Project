@@ -1,0 +1,53 @@
+﻿@model IEnumerable<EyeCare.Web.ViewModel.SellerViewModel>
+<div class="row">
+    <div class="col-sm-12">
+        <div class="card">
+            <div class="card-body">
+                <div class="table-responsive">
+                    <table class="datatable table table-hover table-center mb-0">
+                        <thead>
+                            <tr>
+                                <th>Seller Name</th>
+                                <th>Email</th>
+                                <th>Store Name</th>
+                                <th>Store Phone</th>
+                                <th>Store Adddress</th>
+                                <th>Member Since</th>
+                                <th>Account Status</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in Model)
+                            {
+                                <tr>
+                                    <td>
+                                        <h2 class="table-avatar">
+                                            <a class="avatar avatar-sm mr-2"><img class="avatar-img rounded-circle" src="~/Areas/CMS/assets/img/patients/patient1.jpg" alt="User Image"></a>
+                                            <a>@item.SellerName</a>
+                                        </h2>
+                                    </td>
+                                    <td>@item.SellerEmail</td>
+                                    <td>@item.SellerStoreName</td>
+                                    <td>@item.SellerStorePhone</td>
+                                    <td>@item.SellerStoreAddress</td>
+                                    <td>@item.SellerMemberSince.Value.ToString("yyyy MM dd")</td>
+                                    <td>
+                                        <div class="status-toggle">
+                                            <input type="checkbox" id="status_1" class="check" checked>
+                                            <label for="status_1" class="checktoggle">checkbox</label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <button id="btnEdite" class="btn btn-primary" onclick="editeSeller(@item.SellerId)"><i class="fa fa-edit"></i></button> @*&nbsp;&nbsp;*@
+                                        <button id="btnDelete" class="btn btn-danger" onclick="deleteSeller(@item.SellerId)"><i class="fa fa-trash"></i></button>
+                                    </td>
+                                </tr>
+                            }                           
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

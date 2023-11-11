@@ -1,0 +1,204 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+	<div class="container-fluid">
+
+					<div class="row">
+						<div class="col-md-5 col-lg-4 col-xl-3 theiaStickySidebar dct-dashbd-lft">
+						
+							<!-- Profile Widget -->
+							<div class="card widget-profile pat-widget-profile">
+								<div class="card-body">
+									<div class="pro-widget-content">
+										<div class="profile-info-widget">
+											<a href="#" class="booking-doc-img">
+												<img src="~/assets/img/patients/patient.jpg" alt="User Image">
+											</a>
+											<div class="profile-det-info">
+												<h3>Richard Wilson</h3>
+												
+												<div class="patient-details">
+													<h5><b>Patient ID :</b> PT0016</h5>
+													<h5 class="mb-0"><i class="fas fa-map-marker-alt"></i> Newyork, United States</h5>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="patient-info">
+										<ul>
+											<li>Phone <span>+1 952 001 8563</span></li>
+											<li>Age <span>38 Years, Male</span></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<!-- /Profile Widget -->
+							
+							<!-- Last Booking -->
+							<div class="card">
+								<div class="card-header">
+									<h4 class="card-title">Last Booking</h4>
+								</div>
+								<ul class="list-group list-group-flush">
+									<li class="list-group-item">
+										<div class="media align-items-center">
+											<div class="mr-3">
+												<img alt="Image placeholder" src="~/assets/img/doctors/doctor-thumb-02.jpg" class="avatar  rounded-circle">
+											</div>
+											<div class="media-body">
+												<h5 class="d-block mb-0">Dr. Darren Elder </h5>
+												<span class="d-block text-sm text-muted">Dentist</span>
+												<span class="d-block text-sm text-muted">14 Nov 2021 5.00 PM</span>
+											</div>
+										</div>
+									</li>
+									<li class="list-group-item">
+										<div class="media align-items-center">
+											<div class="mr-3">
+												<img alt="Image placeholder" src="~/assets/img/doctors/doctor-thumb-02.jpg" class="avatar  rounded-circle">
+											</div>
+											<div class="media-body">
+												<h5 class="d-block mb-0">Dr. Darren Elder </h5>
+												<span class="d-block text-sm text-muted">Dentist</span>
+												<span class="d-block text-sm text-muted">12 Nov 2021 11.00 AM</span>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+							<!-- /Last Booking -->
+							
+						</div>
+
+						<div class="col-md-7 col-lg-8 col-xl-9 dct-appoinment">
+							<div class="card">
+								<div class="card-body pt-0">
+									<div class="user-tabs">
+										<ul class="nav nav-tabs nav-tabs-bottom nav-justified flex-wrap">
+											<li class="nav-item">
+												<a class="nav-link active" href="#pat_appointments" data-toggle="tab"><span style="color:#0a3d62">Appointments</span></a>
+											</li>
+											<!--<li class="nav-item">
+												<a class="nav-link" href="#pres" data-toggle="tab"><span >Prescription</span></a>
+											</li>-->
+											<li class="nav-item">
+												<a class="nav-link" href="#medical" data-toggle="tab"><span class="med-records"style="color:#0a3d62">Orders</span></a>
+											</li>
+											<!--<li class="nav-item">
+												<a class="nav-link" href="#billing" data-toggle="tab"><span>Billing</span></a>
+											</li>--> 
+										</ul>
+									</div>
+									<div class="tab-content">
+										
+										<!-- Appointment Tab -->
+										<div id="pat_appointments" class="tab-pane fade show active">
+											<div class="card card-table mb-0">
+												<div class="card-body">
+													<div class="table-responsive">
+														<table class="table table-hover table-center mb-0">
+															<thead>
+																<tr>
+																	<th>Doctor</th>
+																	<th>Appt Date</th>
+																	<th>Booking Date</th>
+																	<th class="text-center">Action</th>
+																</tr>
+															</thead>
+															<tbody>
+																<tr>
+																	<td>
+																		<h2 class="table-avatar">
+																			<a href="doctor-profile.html" class="avatar avatar-sm mr-2">
+																				<img class="avatar-img rounded-circle" src="~/assets/img/doctors/doctor-thumb-02.jpg" alt="User Image">
+																			</a>
+																			<a href="doctor-profile.html">Dr. Darren Elder <span>Dental</span></a>
+																		</h2>
+																	</td>
+																	<td>14 Nov 2021 <span class="d-block text-info">10.00 AM</span></td>
+																	<td>12 Nov 2021</td>
+																	<td class="text-center">
+																		<div class="table-action">
+																			<a href="javascript:void(0);" class="btn btn-sm bg-success-light">
+																				<i class="far fa-edit"></i> Edit
+																			</a>
+                                                                            <a href="javascript:void(0);" class="btn btn-sm bg-danger-light">
+																				<i class="fa fa-trash"></i> Delete
+																			</a>
+																		</div>
+																	</td>
+																</tr>
+															</tbody>
+														</table>
+													</div>
+												</div>
+											</div>
+										</div>
+										<!-- /Appointment Tab -->									
+										<!-- Medical Records Tab -->
+										<div class="tab-pane fade" id="medical">
+                                            <div class="card card-table">
+                                                <div class="card-body">
+                                                    <div class="table-responsive">
+                                                        <table class="table table-hover table-center table-borderless">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th style="width: 100px">Product Name</th>
+                                                                    <th style="width: 100px">Quantity</th>
+                                                                    <th style="width: 100px">Delivery During</th>
+                                                                    <th style="width: 100px;">Total Price</th>
+                                                                    <th style="width: 80px;"></th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>
+                                                                        <input class="form-control" value="Amoxapine" type="text" disabled>
+                                                                    </td>
+                                                                    <td>
+                                                                        <input class="form-control" type="text" value="2">
+                                                                    </td>
+                                                                    <td>
+                                                                        <input class="form-control" value="2 Days" type="text" disabled>
+                                                                    </td>
+                                                                    <td>
+                                                                       150$
+                                                                    </td>
+                                                                    <td>
+                                                                        <a href="#" class="btn bg-danger-light trash"><i class="fa fa-trash"></i></a>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>
+                                                                        <input class="form-control" type="text" value="Benazepril" disabled>
+                                                                    </td>
+                                                                    <td>
+                                                                        <input class="form-control" type="text" value="2">
+                                                                    </td>
+                                                                    <td>
+                                                                        <input class="form-control" value="1 Days" type="text" disabled>
+                                                                    </td>
+                                                                    <td>
+                                                                        20000$
+                                                                    </td>                                                               
+                                                                    <td>
+                                                                        <a href="#" class="btn bg-danger-light trash"><i class="fa fa-trash"></i></a>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </div>
+										</div>
+										<!-- /Medical Records Tab -->												
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+

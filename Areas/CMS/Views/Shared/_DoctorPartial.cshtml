@@ -1,0 +1,59 @@
+﻿@model IEnumerable<EyeCare.DAL.Model.SP_GetAllDoctors_Result>
+<div class="row">
+    <div class="col-sm-12">
+        <div class="card">
+            <div class="card-body">
+                <div class="table-responsive">
+                    <table class="datatable table table-hover table-center mb-0">
+                        <thead>
+                            <tr>
+                                <th>Dr.Name</th>
+                                <th>Dr.Age</th>
+                                <th>Dr.Phone</th>
+                                <th>Dr.Email</th>
+                                <th>Gender</th>
+                                <th>Clinic Name</th>
+                                <th>Clinic Address</th>
+                                <th>Clinic Phone</th>
+                                <th>Member Since</th>
+                                <th>Account Status</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in Model)
+                            {
+                                <tr>
+                                    <td>
+                                        <h2 class="table-avatar">
+                                            <a class="avatar avatar-sm mr-2"><img class="avatar-img rounded-circle" src="~/Images/doctor.png" alt="User Image"></a>
+                                            <a>@item.DoctorName</a>
+                                        </h2>
+                                    </td>
+                                    <td>@item.Age</td>
+                                    <td>@item.DoctorPhone</td>
+                                    <td>@item.Email</td>
+                                    <td>@item.Gender</td>
+                                    <td>@item.ClinicName</td>
+                                    <td>@item.ClinicAddress</td>
+                                    <td>@item.ClinicPhone</td>
+                                    <td>@item.DoctorMemberSince.Value.ToString("yyyy MM dd")</td>
+                                    <td>
+                                        <div class="status-toggle">
+                                            <input type="checkbox" id="status_1" class="check" checked>
+                                            <label for="status_1" class="checktoggle">checkbox</label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <button id="btnEdite" class="btn btn-primary" onclick="editeDoctor(@item.DoctorId)"><i class="fa fa-edit"></i></button> &nbsp;&nbsp;
+                                        <button id="btnDelete" class="btn btn-danger" onclick="deleteDoctor(@item.DoctorId)"><i class="fa fa-trash"></i></button>
+                                    </td>
+                                </tr>
+                            }                            
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

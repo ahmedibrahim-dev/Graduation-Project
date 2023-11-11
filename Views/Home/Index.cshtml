@@ -1,0 +1,541 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>EYE CARE</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="~/Images/eye.png" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo&display=swap" rel="stylesheet">
+    <link href="~/CSS/StyleSheet.css" rel="stylesheet" />
+    <link href="~/CSS/bootstrap.css" rel="stylesheet" />
+    <!-- Fontawesome CSS -->
+    <link rel="stylesheet" href="~/assets/plugins/fontawesome/css/fontawesome.min.css">
+    <link rel="stylesheet" href="~/assets/plugins/fontawesome/css/all.min.css">
+</head>
+<body>
+    <!-- loader  -->
+    <!--<div class="loader_bg">
+        <div class="loader"><img src="~/Store/images/Doctors symbol.gif" alt="#" /></div>
+    </div>-->
+    <!-- end loader -->
+    <!-- Start NAV + HEADER -->
+    <header class="header" id="topheader">
+        <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
+            <div class="container">
+                <a class="navbar-brand" href="@Url.Action("Index","Home")">
+                    <img src="~/Images/eye.png" class="imglogo" />
+                    EYE CARE
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="@Url.Action("Index","Home")">Home<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="@Url.Action("About","Home")">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="@Url.Action("Index","Booking")">Doctors</a>
+                        </li>
+                        <li class="nav-item">
+                            @*<a class="nav-link" href="@Url.Action("Index","Store")">Store</a>*@
+                            <a class="nav-link" href="~/Store/Index">Store</a>
+                        </li>
+                        @Html.Partial("_LoginPartial")
+                        @*<li class="nav-item">
+                            <a class="nav-link" href="@Url.Action("LogIn","Account")">LogIn / SignUp</a>
+                        </li>*@
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section class="header-section">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="center-div carousel-caption col-12">
+                    <h1 class="font-weight-bold">World class care near you</h1>
+                    <p>Because we care</p>
+                    <div class="header-buttons">
+                        <a href="@Url.Action("Index","Booking")">Book Now</a>
+                        <a href="~/Store/Index">Shop Now</a>
+                    </div>
+                </div>
+                <div id="video_overlays"></div>
+                <video autoplay muted loop>
+                    <source src="~/Videos/pexels-pavel-danilyuk-5995403.mp4" type="video/mp4" />
+                </video>
+            </div>
+        </div>
+    </section>
+    <!-- End NAV + HEADER -->
+    <!-- Start EXTRA HEADER DIV  -->
+    <section class="header-extradiv">
+        <div class="container">
+            <div class="row">
+                <div class="extra-div col-lg-4 col-md-4 col-12">
+                    <a href="#">
+                        <img src="~/Images/icon-technology.svg" />
+                        <h2 class="text-uppercase">Eye Scan</h2>
+                    </a>
+                    <p>We strive to consistently meet and exceed the service and patient-care expectations of our clients. We do so by working with the finest calibers of doctors who are part of our team.</p>
+                </div>
+                <div class="extra-div col-lg-4 col-md-4 col-12" style="border-left:5px solid white;border-right:5px solid white;">
+                    <a href="#">
+                        <img src="~/Images/icon-patient.svg" />
+                        <h2 class="text-uppercase">Eye care</h2>
+                    </a>
+                    <p>Latest technologies and innovations in eye investigations are integrated in this unit, The investigation procedures at Eye Scan take a deeper look into every part of the eye.</p>
+                </div>
+                <div class="extra-div col-lg-4 col-md-4 col-12">
+                    <a href="#">
+                        <img src="~/Images/icon-glasse.svg" />
+                        <h2 class="text-uppercase">Our store</h2>
+                    </a>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum scelerisque libero nec tortor malesuada aliquam.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End EXTRA HEADER DIV  -->
+    <!-- Start what do we OFFER SECTION WITH SLIDER -->
+    <section class="weoffer">
+        <div class="container headings text-center">
+            <h1 class="text-center font-weight-bold text-uppercase" style="margin-bottom:0">What do we offer </h1>
+            <div class="bor" style="margin-bottom:20px"></div>
+        </div>
+        <div id="banner1" class="imgslider">
+            <!--*********Slider************-->
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="~/Images/Image_2.jpg" class="sliderimg" />
+                        <div class="carousel-caption d-none d-md-block crslider">
+                            <h2 style="color:white">First slide label</h2>
+                            <p style="color:white">Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="~/Images/istockphoto-1291741554-1024x1024.jpg" class="sliderimg" />
+                        <div class="carousel-caption d-none d-md-block crslider">
+                            <h2 style="color:white">First slide label</h2>
+                            <p style="color:white">Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="~/Images/contact-lenses-online.jpg" class="sliderimg" />
+                        <div class="carousel-caption d-none d-md-block crslider">
+                            <h2 style="color:white">First slide label</h2>
+                            <p style="color:white">Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="~/Images/291716_2.jpg" class="sliderimg" />
+                        <div class="carousel-caption d-none d-md-block crslider">
+                            <h2 style="color:white">First slide label</h2>
+                            <p style="color:white">Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <i class="fas fa-angle-double-left" aria-hidden="true"></i>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <i class="fas fa-angle-double-right" aria-hidden="true"></i>
+            </a>
+            <!--*********Slider************-->
+        </div>
+
+    </section>
+    <!-- End what do we OFFER SECTION WITH SLIDER-->
+    <!-- Start LOREUM IPSIUM SECTION -->
+    <section class="serviceoffers" id="servicediv">
+        <div class="container headings text-center">
+            <h1 class="text-center font-weight-bold text-uppercase">Our Service</h1>
+            <div class="bor"></div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-12 col-10 offset-1 offset-lg-0 servicediv">
+                    <div class="row">
+                        <div class="col-lg-2 col-2 service-icons">
+                            <i class="fa-3x fas fa-store"></i>
+                        </div>
+                        <div class="col-lg-10 col-10">
+                            <h2>Browse Store</h2>
+                            <p>class="text-center font-weight-bold text-uppercase" style="margin-bottom:0;</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-2 col-2 service-icons">
+                            <i class="fa-3x fas fa-shipping-fast"></i>
+                        </div>
+                        <div class="col-lg-10 col-10">
+                            <h2>Book Appoinment</h2>
+                            <p>class="text-center font-weight-bold text-uppercase" style="margin-bottom:0;</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-2 col-2 service-icons">
+                            <i class="fa-3x far fa-handshake"></i>
+                        </div>
+                        <div class="col-lg-10 col-10">
+                            <h2>Book Appoinment</h2>
+                            <p>class="text-center font-weight-bold text-uppercase" style="margin-bottom:0;</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12 col-12 servicediv">
+                    <div class="row">
+                        <div class="col-lg-2 col-2 service-icons">
+                            <i class="fa-3x fas fa-user-md"></i>
+                        </div>
+                        <div class="col-lg-10 col-10">
+                            <h2>Search doctors</h2>
+                            <p>class="text-center font-weight-bold text-uppercase" style="margin-bottom:0;</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-2 col-2 service-icons">
+                            <i class="fa-3x far fa-calendar-alt"></i>
+                        </div>
+                        <div class="col-lg-10 col-10">
+                            <h2>Book Appoinment</h2>
+                            <p>class="text-center font-weight-bold text-uppercase" style="margin-bottom:0;</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-2 col-2 service-icons">
+                            <i class="fa-3x far fa-eye"></i>
+                        </div>
+                        <div class="col-lg-10 col-10">
+                            <h2>Eye Test</h2>
+                            <p>class="text-center font-weight-bold text-uppercase" style="margin-bottom:0;</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End LOREUM IPSIUM SECTION -->
+    <!-- Start Client's feedback SECTION -->
+    <section class="clientfeedback">
+        <div class="container headings text-center">
+            <h1 class="text-center font-weight-bold text-uppercase" style="margin-bottom:0">Our Team</h1>
+            <div class="bor"></div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-6">
+                    <h3 class="mb-3" style="color:#3c6382">Our doctors' eye care advice</h3>
+                </div>
+                <div class="col-6 text-right btnrl">
+                    <a class="btn btn-primary mb-3 mr-1" href="#carouselExampleIndicators2" role="button" data-slide="prev">
+                        <i class="fas fa-angle-left" style="font-size:20px;font-weight:bold"></i>
+                    </a>
+                    <a class="btn btn-primary mb-3 " href="#carouselExampleIndicators2" role="button" data-slide="next">
+                        <i class="fas fa-angle-right" style="font-size:20px;font-weight:bold"></i>
+                    </a>
+                </div>
+                <div class="col-12">
+                    <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="row">
+                                    <div class="col-md-4 mb-3">
+                                        <div class="card cardslider">
+                                            <img class="img-fluid" alt="100%x280" src="~/assets/img/doctors/doctor-01.jpg">
+                                            <div class="card-body">
+                                                <h4 class="card-title">Special title treatment</h4>
+                                                <p class="card-text">With supporting text below as a natural lead-in to additional content.With supporting text below as a natural lead-in to additional content.</p>
+                                                <hr />
+                                                <div class="clinic-booking">
+                                                    <a class="view-pro-btn" href="@Url.Action("DoctorProfile","Booking")">View Profile</a>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mb-3">
+                                        <div class="card cardslider">
+                                            <img class="img-fluid" alt="100%x280" src="~/assets/img/doctors/doctor-02.jpg">
+                                            <div class="card-body">
+                                                <h4 class="card-title">Special title treatment</h4>
+                                                <p class="card-text">With supporting text below as a natural lead-in to additional content.With supporting text below as a natural lead-in to additional content.</p>
+                                                <hr />
+                                                <div class="clinic-booking">
+                                                    <a class="view-pro-btn" href="@Url.Action("DoctorProfile","Booking")">View Profile</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mb-3">
+                                        <div class="card cardslider">
+                                            <img class="img-fluid" alt="100%x100%" src="~/assets/img/doctors/doctor-03.jpg">
+                                            <div class="card-body">
+                                                <h4 class="card-title">Special title treatment</h4>
+                                                <p class="card-text">With supporting text below as a natural lead-in to additional content.With supporting text below as a natural lead-in to additional content.</p>
+                                                <hr />
+                                                <div class="clinic-booking">
+                                                    <a class="view-pro-btn" href="@Url.Action("DoctorProfile","Booking")">View Profile</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row">
+
+                                    <div class="col-md-4 mb-3">
+                                        <div class="card cardslider">
+                                            <img class="img-fluid" alt="100%x280" src="~/assets/img/doctors/doctor-04.jpg">
+                                            <div class="card-body">
+                                                <h4 class="card-title">Special title treatment</h4>
+                                                <p class="card-text">With supporting text below as a natural lead-in to additional content.With supporting text below as a natural lead-in to additional content.</p>
+                                                <hr />
+                                                <div class="clinic-booking">
+                                                    <a class="view-pro-btn" href="@Url.Action("DoctorProfile","Booking")">View Profile</a>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mb-3">
+                                        <div class="card cardslider">
+                                            <img class="img-fluid" alt="100%x280" src="~/assets/img/doctors/doctor-05.jpg">
+                                            <div class="card-body">
+                                                <h4 class="card-title">Special title treatment</h4>
+                                                <p class="card-text">With supporting text below as a natural lead-in to additional content.With supporting text below as a natural lead-in to additional content.</p>
+                                                <hr />
+                                                <div class="clinic-booking">
+                                                    <a class="view-pro-btn" href="@Url.Action("DoctorProfile","Booking")">View Profile</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mb-3">
+                                        <div class="card cardslider">
+                                            <img class="img-fluid" alt="100%x280" src="~/assets/img/doctors/doctor-06.jpg">
+                                            <div class="card-body">
+                                                <h4 class="card-title">Special title treatment</h4>
+                                                <p class="card-text">With supporting text below as a natural lead-in to additional content.With supporting text below as a natural lead-in to additional content.</p>
+                                                <hr />
+                                                <div class="clinic-booking">
+                                                    <a class="view-pro-btn" href="@Url.Action("DoctorProfile","Booking")">View Profile</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Client's feedback SECTION -->
+    <!-- Start daily offers SECTION -->
+    <section class="offers" id="offersdiv">
+        <div class="container headings text-center">
+            <h1 class="text-center font-weight-bold text-uppercase text-white" style="color:white!important;">Daily offers</h1>
+            <div class="whitebor"></div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-12">
+                    <div class="card text-center">
+                        <div class="card-header text-uppercase">Glasses offers</div>
+                        <div class="card-body">
+                            <ol>
+                                <li style="color:#3c6382;font-size:25px"><span>20</span>%</li>
+                                <li>
+                                    text-center font-weight-bold text-uppercase text-white
+                                    text-center font-weight-bold text-uppercase.text-center font-weight-bold text-uppercase text-white text-center font-weight-bold.
+                                </li>
+                            </ol>
+                        </div>
+                        <div class="card-footer"><a href="@Url.Action("Glasses","Store")" class="text-uppercase">purchase</a></div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-12 secondcard">
+                    <div class="card text-center">
+                        <div class="card-header text-uppercase">Lenses offers</div>
+                        <div class="card-body ">
+                            <ol>
+                                <li style="color:#3c6382;font-size:25px"><span>35</span>%</li>
+                                <li>
+                                    text-center font-weight-bold text-uppercase text-white
+                                    text-center font-weight-bold text-uppercase.text-center font-weight-bold text-uppercase text-white text-center font-weight-bold.
+                                </li>
+                            </ol>
+                        </div>
+                        <div class="card-footer"><a href="@Url.Action("Lens","Store")" class="text-uppercase">purchase</a></div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-12">
+                    <div class="card text-center">
+                        <div class="card-header text-uppercase">Eye Care offers</div>
+                        <div class="card-body">
+                            <ol>
+                                <li style="color:#3c6382;font-size:25px"><span>50</span>%</li>
+                                <li>
+                                    text-center font-weight-bold text-uppercase text-white
+                                    text-center font-weight-bold text-uppercase.text-center font-weight-bold text-uppercase text-white text-center font-weight-bold.
+                                </li>
+                            </ol>
+                        </div>
+                        <div class="card-footer"><a href="@Url.Action("EyeCare","Store")" class="text-uppercase">purchase</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Daily offers SECTION -->
+    <!-- Start Numbering SECTION -->
+    <section class="Numbring">
+        <div class="container headings text-center">
+            <h1 class="text-center font-weight-bold text-uppercase">clients deal with our website</h1>
+            <div class="bor"></div>
+        </div>
+        <div class="container d-flex justify-content-around align-items-center text-center mt-4">
+            <div>
+                <h1 class="coun">1500</h1>
+                <p class="text-uppercase">lorium ipsium</p>
+            </div>
+            <div>
+                <h1 class="coun">800</h1>
+                <p class="text-uppercase">lorium ipsium</p>
+            </div>
+            <div>
+                <h1 class="coun">600</h1>
+                <p class="text-uppercase">lorium ipsium</p>
+            </div>
+        </div>
+    </section>
+    <!-- End Numbring SECTION -->
+    <!-- Start footer SECTION -->
+    <footer class="text-white text-lg-start">
+        <div class="p-4">
+            <!--Grid row-->
+            <div class="row p-2">
+                <!--Grid column-->
+                <div class="col-lg-3 col-md-12 mb-4 mb-md-0">
+                    <h3 class="text-uppercase footerh">Footer Content</h3>
+                    <p class="pfooter">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    </p>
+                    <ul class="list-unstyled">
+                        <li class="mt-4 pt-4">
+                            <a href="www.linkedin.com" class="text-white pr-2"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="www.facebook.com" class="text-white pr-2"><i class="fab fa-facebook-square"></i></a>
+                            <a href="www.twitter.com" class="text-white pr-2"><i class="fab fa-twitter"></i></a>
+                            <a href="www.instagram.com" class="text-white pr-2"><i class="fab fa-instagram"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <!--Grid column-->
+                <!--Grid column-->
+                <div class="col-lg-3 col-md-12 mb-4 mb-md-0">
+                    <h3 class="text-uppercase footerh">For Doctors</h3>
+                    <ul class="list-unstyled mb-0">
+                        <li>
+                            <i class="fa fa-angle-double-right"></i>
+                            <a href="~/#!" class="text-white">Link 1</a>
+                        </li>
+                        <li>
+                            <i class="fa fa-angle-double-right"></i>
+                            <a href="~/#!" class="text-white">Link 2</a>
+                        </li>
+                        <li>
+                            <i class="fa fa-angle-double-right"></i>
+                            <a href="~/#!" class="text-white">Link 3</a>
+                        </li>
+                        <li>
+                            <i class="fa fa-angle-double-right"></i>
+                            <a href="#!" class="text-white">Link 4</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-12 mb-4 mb-md-0">
+                    <h3 class="text-uppercase footerh">For Patients</h3>
+                    <ul class="list-unstyled">
+                        <li>
+                            <i class="fa fa-angle-double-right"></i>
+                            <a href="~/#!" class="text-white">Link 1</a>
+                        </li>
+                        <li>
+                            <i class="fa fa-angle-double-right"></i>
+                            <a href="~/#!" class="text-white">Link 2</a>
+                        </li>
+                        <li>
+                            <i class="fa fa-angle-double-right"></i>
+                            <a href="~/#!" class="text-white">Link 3</a>
+                        </li>
+                        <li>
+                            <i class="fa fa-angle-double-right"></i>
+                            <a href="~/#!" class="text-white">Link 4</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-12 mb-4 mb-md-0">
+                    <h3 class="text-uppercase mb-0 footerh">Contact us</h3>
+
+                    <ul class="list-unstyled">
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <p class="text-white">3523Lorem ipsum dolor sit amet</p>
+                        </li>
+                        <li>
+                            <i class="fa fa-phone"></i>
+                            <p class="text-white">+02 12345678</p><br />
+                            <p class="text-white" style="padding-left:30px;">+02 11251111</p>
+                        </li>
+                        <li>
+                            <i class="fa fa-envelope"></i>
+                            <p class="text-white">EyeCare@gmail.com</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="scrolltop float-right">
+                <i class="fa fa-arrow-circle-up" id="myBtn"></i>
+            </div>
+        </div>
+        <!-- Copyright -->
+        <div class="text-center p-3 divcopyright" style="background-color: rgba(0, 0, 0, 0.2)">
+            © 2021 Copyright:
+            <a class="text-white text-uppercase" href="~/#">Eye care.com</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+    <!-- Start footer SECTION -->
+    <!--******************* JS ******************-->
+    <script src="~/JS/jquery-3.4.1.js"></script>
+    <script src="~/JS/jquery.waypoints.min.js"></script>
+    <script src="~/JS/jquery.counterup.min.js"></script>
+    <script src="~/JS/bootstrap.js"></script>
+    <script src="~/JS/MyJS.js"></script>
+    <!--******************* JS ******************-->
+</body>
+</html>
+

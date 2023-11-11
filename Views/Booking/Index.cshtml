@@ -1,0 +1,121 @@
+﻿@model IEnumerable<EyeCare.DAL.Model.SP_GetAllDoctors_Result>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12 col-lg-4 col-xl-3 theiaStickySidebar">
+
+            <!-- Search Filter -->
+            <div class="card search-filter">
+                <div class="card-header">
+                    <h4 class="card-title mb-0">Search Filter</h4>
+                </div>
+                <div class="card-body">
+                    <div class="filter-widget">
+                        <div>
+                            <input type="text" class="form-control" placeholder="Enter Doctor Name">
+                        </div>
+                    </div>
+                    <div class="filter-widget">
+                        <h4>Gender</h4>
+                        <div>
+                            <label class="custom_check">
+                                <input type="checkbox" name="gender_type" checked>
+                                <span class="checkmark"></span> Male Doctor
+                            </label>
+                        </div>
+                        <div>
+                            <label class="custom_check">
+                                <input type="checkbox" name="gender_type">
+                                <span class="checkmark"></span> Female Doctor
+                            </label>
+                        </div>
+                    </div>
+                    <div class="btn-search">
+                        <button type="button" class="btn btn-block">Search</button>
+                    </div>
+                </div>
+            </div>
+            <!-- /Search Filter -->
+
+        </div>
+        <div class="col-md-12 col-lg-8 col-xl-9">
+            <!-- Doctor Widget -->
+            @foreach (var item in Model)
+            {
+                <div class="card">
+                    <div class="card-body">
+                        <div class="doctor-widget">
+                            <div class="doc-info-left">
+                                <div class="doctor-img">
+                                    <a href="@Url.Action("DoctorProfile","Booking")">
+                                        @if (item.DoctorGender.Value)
+                                        {
+                                            <img src="~/assets/img/doctors/doctor-thumb-01.jpg" class="img-fluid" alt="User Image">
+                                        }
+                                        else
+                                        {
+                                            <img src="~/assets/img/doctors/doctor-thumb-02.jpg" class="img-fluid" alt="User Image">
+                                        }
+
+                                    </a>
+                                </div>
+                                <div class="doc-info-cont">
+                                    <h4 class="doc-name"><a href="@Url.Action("DoctorProfile","Booking")">@item.DoctorName</a></h4>
+                                    <p class="doc-speciality">@item.ClinicName</p>
+                                    <div class="clinic-details">
+                                        <ul class="clinic-gallery">
+                                            <li>
+                                                <a href="~/assets/img/features/feature-01.jpg" data-fancybox="gallery">
+                                                    <img src="~/assets/img/features/feature-01.jpg" alt="Feature">
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="~/assets/img/features/feature-02.jpg" data-fancybox="gallery">
+                                                    <img src="~/assets/img/features/feature-02.jpg" alt="Feature">
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="~/assets/img/features/feature-03.jpg" data-fancybox="gallery">
+                                                    <img src="~/assets/img/features/feature-03.jpg" alt="Feature">
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="~/assets/img/features/feature-04.jpg" data-fancybox="gallery">
+                                                    <img src="~/assets/img/features/feature-04.jpg" alt="Feature">
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="clinic-services">
+                                        <span>Dental Fillings</span>
+                                        <span> Whitneing</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="doc-info-right">
+                                <div class="clini-infos">
+                                    <ul>
+                                        <li><i class="fas fa-map-marker-alt"></i> @item.ClinicAddress</li>
+                                        <li><i class="far fa-money-bill-alt"></i> $300<i class="fas fa-info-circle" data-toggle="tooltip" title="Lorem Ipsum"></i> </li>
+                                    </ul>
+                                </div>
+                                <div class="clinic-booking">
+                                    <a class="view-pro-btn" href="@Url.Action("DoctorProfile","Booking", new {@id = item.DoctorId })">View Profile</a>
+                                    <a class="apt-btn" href="@Url.Action("BookingDate","Booking", new {@id = item.DoctorId })">Book Appointment</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+            <div class="load-more text-center">
+                <a class="btn btn-sm" href="~/javascript:void(0);">Next <i class="fas fa-angle-double-right"></i></a>
+            </div>
+        </div>
+    </div>
+</div>
+

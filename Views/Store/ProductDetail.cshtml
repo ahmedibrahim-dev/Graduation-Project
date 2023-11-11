@@ -1,0 +1,72 @@
+﻿
+@{
+    Layout = "~/Views/Shared/_StoreLayout.cshtml";
+}
+<link href="~/Store/css/PDetails.css" rel="stylesheet" />
+    <section id="services" class="services section-bg">
+        <div class="container-fluid">
+            <div class="row row-sm">
+                <div class="col-md-6 _boxzoom">
+                    <div class="zoom-thumb">
+                        <ul class="piclist">
+                            <li><img src="~/Store/images/10033_f_2_1.jpg" alt=""></li>
+                            <li><img src="~/Store/images/5.jpg" alt=""></li>
+                            <li><img src="~/Store/images/gucci0gg0026o-eyeglasses-001-angle.jpg" alt=""></li>
+                            <li><img src="~/Store/images/61RaX3RrMwL._UX679_.jpg" alt=""></li>
+                        </ul>
+                    </div>
+                    <div class="_product-images">
+                        <div class="picZoomer">
+                            <img class="my_img" src="~/Store/images/5.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="_product-detail-content">
+                        <h3 class="_p-name"> Milton Bottle </h3>
+                        <div class="_p-price-box">
+                            <div class="p-list">
+                                <span style="font-size:30px; color:#0a3d62">Price: </span>
+                                <span class="price">699 $</span>
+                            </div>
+                            <div class="_p-add-cart">
+                                <div class="_p-qty">
+                                    <span>Add Quantity</span>
+                                    <div class="value-button decrease_" id="" value="Decrease Value">-</div>
+                                    <input type="number" name="qty" id="number" value="0" />
+                                    <div class="value-button increase_" id="" value="Increase Value">+</div>
+                                </div><br />
+                                <div class="_p-qty">
+                                    <span>Size of EyeGlasses: </span>
+                                    <input type="file" style="border: none; color:black" />                                 
+                                </div>
+                            </div>
+                            <span style="color:aqua;font-size:30px">About this product: </span>
+                            <div class="_p-features">
+                                <span>Product Name: glasses brand.</span>
+                                <span>Type: General Pleat.</span>                              
+                                <span>Frame: Rope.</span>
+                                <span style="color:red!important"> Available Quantity: 5 Pices.</span>
+                            </div>
+                            <form action="" method="post" accept-charset="utf-8">
+                                <ul class="spe_ul"></ul>
+                                <div class="_p-qty-and-cart">
+                                    <div class="_p-add-cart">
+                                        <button class="btn-theme btn buy-btn" tabindex="0">
+                                            <i class="fas fa-shipping-fast"></i> Order Now
+                                        </button>
+                                        <input type="hidden" name="pid" value="18" />
+                                        <input type="hidden" name="price" value="850" />
+                                        <input type="hidden" name="url" value="" />
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+@section scripts{
+<script src="~/Store/js/PDetails.js"></script>
+    }

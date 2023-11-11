@@ -1,0 +1,190 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <!-- basic -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- mobile metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <!-- site metas -->
+    <title>EYE CARE | Store</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="~/Store/css/bootstrap.min.css">
+    <!-- style css -->
+    <link rel="stylesheet" href="~/Store/css/style.css">
+    <link href="~/assets/css/style.css" rel="stylesheet" />
+    <!-- Responsive-->
+    <link rel="stylesheet" href="~/Store/css/responsive.css">
+    <!-- fevicon -->
+    <link rel="icon" href="~/Images/eye.png" type="image/gif" />
+    <!-- Scrollbar Custom CSS -->
+    <link rel="stylesheet" href="~/Store/css/jquery.mCustomScrollbar.min.css">
+    <!-- Fontawesome CSS -->
+    <link rel="stylesheet" href="~/assets/plugins/fontawesome/css/fontawesome.min.css">
+    <link rel="stylesheet" href="~/assets/plugins/fontawesome/css/all.min.css">
+    <!-- Tweaks for older IEs-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+</head>
+    <body>
+        <header id="topheader">
+            <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
+                <div class="container">
+                    <a class="navbar-brand" href="@Url.Action("Index","Home")">
+                        <img src="~/Images/eye.png" class="imglogo" />
+                        EYE CARE
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="@Url.Action("Index","Home")">Home<span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="@Url.Action("About","Home")">About Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="@Url.Action("Index","Booking")">Doctors</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="@Url.Action("Index","Store")">Store</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="@Url.Action("LogIn","Account")">LogIn / SignUp</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <div class="content">
+            @RenderBody()
+        </div>
+        <!-- Start footer SECTION -->
+        <footer class="text-white text-lg-start">
+            <div class="p-4">
+                <!--Grid row-->
+                <div class="row p-2">
+                    <!--Grid column-->
+                    <div class="col-lg-3 col-md-12 mb-4 mb-md-0">
+                        <h3 class="text-uppercase footerh">Footer Content</h3>
+                        <p class="pfooter">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        </p>
+                        <ul class="list-unstyled">
+                            <li class="mt-4 pt-4">
+                                <a href="www.linkedin.com" class="text-white pr-2"><i class="fa fa-linkedin"></i></a>
+                                <a href="www.facebook.com" class="text-white pr-2"><i class="fa fa-facebook-square"></i></a>
+                                <a href="www.twitter.com" class="text-white pr-2"><i class="fa fa-twitter"></i></a>
+                                <a href="www.instagram.com" class="text-white pr-2"><i class="fa fa-instagram"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--Grid column-->
+                    <!--Grid column-->
+                    <div class="col-lg-3 col-md-12 mb-4 mb-md-0">
+                        <h3 class="text-uppercase footerh">For Doctors</h3>
+                        <ul class="list-unstyled mb-0">
+                            <li>
+                                <i class="fa fa-angle-double-right"></i>
+                                <a href="#!" class="text-white">Link 1</a>
+                            </li>
+                            <li>
+                                <i class="fa fa-angle-double-right"></i>
+                                <a href="#!" class="text-white">Link 2</a>
+                            </li>
+                            <li>
+                                <i class="fa fa-angle-double-right"></i>
+                                <a href="#!" class="text-white">Link 3</a>
+                            </li>
+                            <li>
+                                <i class="fa fa-angle-double-right"></i>
+                                <a href="#!" class="text-white">Link 4</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-12 mb-4 mb-md-0">
+                        <h3 class="text-uppercase footerh">For Patients</h3>
+                        <ul class="list-unstyled">
+                            <li>
+                                <i class="fa fa-angle-double-right"></i>
+                                <a href="#!" class="text-white">Link 1</a>
+                            </li>
+                            <li>
+                                <i class="fa fa-angle-double-right"></i>
+                                <a href="#!" class="text-white">Link 2</a>
+                            </li>
+                            <li>
+                                <i class="fa fa-angle-double-right"></i>
+                                <a href="#!" class="text-white">Link 3</a>
+                            </li>
+                            <li>
+                                <i class="fa fa-angle-double-right"></i>
+                                <a href="#!" class="text-white">Link 4</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-12 mb-4 mb-md-0">
+                        <h3 class="text-uppercase mb-0 footerh">Contact us</h3>
+
+                        <ul class="list-unstyled">
+                            <li>
+                                <i class="fa fa-map-marker"></i>
+                                <p class="text-white">3523Lorem ipsum dolor sit amet</p>
+                            </li>
+                            <li>
+                                <i class="fa fa-phone"></i>
+                                <p class="text-white">+02 12345678</p><br />
+                                <p class="text-white" style="padding-left:30px;">+02 11251111</p>
+                            </li>
+                            <li>
+                                <i class="fa fa-envelope"></i>
+                                <p class="text-white">EyeCare@gmail.com</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="scrolltop float-right">
+                    <i class="fa fa-arrow-circle-up" id="myBtn"></i>
+                </div>
+            </div>
+            <!-- Copyright -->
+            <div class="text-center p-3 divcopyright" style="background-color: rgba(0, 0, 0, 0.2)">
+                © 2021 Copyright:
+                <a class="text-white text-uppercase" href="#">Eye care.com</a>
+            </div>
+            <!-- Copyright -->
+        </footer>
+        <!-- Start footer SECTION -->
+        <!-- jQuery -->
+        <script src="~/assets/js/jquery.min.js"></script>
+
+        <!-- Bootstrap Core JS -->
+        <script src="~/assets/js/popper.min.js"></script>
+        <script src="~/assets/js/bootstrap.min.js"></script>
+
+        <!-- Sticky Sidebar JS -->
+        <script src="~/assets/plugins/theia-sticky-sidebar/ResizeSensor.js"></script>
+        <script src="~/assets/plugins/theia-sticky-sidebar/theia-sticky-sidebar.js"></script>
+
+        <!-- Custom JS -->
+        <script src="~/assets/js/script.js"></script>
+        <script src="~/Store/js/PDetails.js"></script>
+        <script>
+            $(document).ready(function () {
+                // MDB Lightbox Init
+                $(function () {
+                    $("#mdb-lightbox-ui").load("mdb-addons/mdb-lightbox-ui.html");
+                });
+            });
+        </script>
+    </body>
+</html>

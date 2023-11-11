@@ -1,0 +1,46 @@
+﻿@model IEnumerable<EyeCare.DAL.Model.ScheduleTiming>
+
+
+@if (Model == null)
+{
+    <p class="text-muted mb-0">Not Available</p>
+}
+else
+{
+    <!-- Slot List -->
+    <div class="doc-times">
+
+        @foreach (var item in Model)
+        {
+            <div class="doc-slot-list">
+                @{ 
+                    string displayTimeFrom = string.Empty;
+                    string displayTimeTo = string.Empty;
+                    var from = item.DrTimingSlotFrom;
+                    if (from.HasValue)
+                    {
+                        DateTime datefrom = DateTime.Today.Add(from.Value);
+                        displayTimeFrom = datefrom.ToString("hh:mm tt");
+                    }
+                    var to = item.DrTimingSlotTo;
+                    if (to.HasValue)
+                    {
+                        DateTime dateTo = DateTime.Today.Add(to.Value);
+                        displayTimeTo = dateTo.ToString("hh:mm tt");
+                    }
+                }
+                @($"{displayTimeFrom} - {displayTimeTo}")
+                @*8:00 pm - 11:30 pm*@
+                <a href="javascript:void(0)" class="delete_schedule">
+                    <i class="fa fa-times" style="color:white"></i>
+                </a>
+            </div>
+        }
+    </div>
+    <!-- /Slot List -->
+
+
+}
+
+
+

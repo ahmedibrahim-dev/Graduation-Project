@@ -1,0 +1,247 @@
+﻿@model EyeCare.Web.ViewModel.ClientViewModel
+@{
+    ViewBag.Title = "Booking";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    var doctor = ViewBag.Doctor as EyeCare.DAL.Model.Doctor;
+}
+
+<div class="container">
+
+    <div class="row">
+        <div class="col-12">
+
+            <div class="card">
+                <div class="card-body">
+                    <div class="booking-doc-info">
+                        <a href="@Url.Action("DoctorProfile","Booking")" class="booking-doc-img">
+                            <img src="~/assets/img/doctors/doctor-thumb-02.jpg" alt="User Image">
+                        </a>
+                        <div class="booking-info">
+                            <h4><a href="@Url.Action("DoctorProfile","Booking")">@doctor.DoctorName</a></h4>
+                            <p class="text-muted mb-0"><i class="fas fa-map-marker-alt"></i> Newyork, USA</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12">
+
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title">Schedule Timings</h4>
+                                <div class="profile-box">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="card schedule-widget mb-0">
+
+                                                <!-- Schedule Header -->
+                                                <div class="schedule-header">
+
+                                                    <!-- Schedule Nav -->
+                                                    <div class="schedule-nav">
+                                                        <ul class="nav nav-tabs nav-justified">
+                                                            @foreach (var item in ViewBag.WorkDays as IEnumerable<EyeCare.DAL.Model.SP_GetIntervalWorkDays_Result>)
+                                                            {
+                                                                <li class="nav-item">
+                                                                    <a class="nav-link" WorkDayId="@item.WorkDayId" BookingDate="@item.DateValue" data-toggle="tab" href="#slot_@item.WorkDayId">@item.DayName</a>
+                                                                    @*<a class="nav-link" data-toggle="tab" href="#slot_@item.WorkDayId">@item.DateShow.Value.ToString("yyyy-MM-dd")</a>*@
+                                                                </li>
+                                                            }
+
+                                                        </ul>
+                                                    </div>
+                                                    <!-- /Schedule Nav -->
+
+                                                </div>
+                                                <!-- /Schedule Header -->
+                                                <!-- Schedule Content -->
+                                                <div class="tab-content schedule-cont">
+
+                                                    @foreach (var item in ViewBag.WorkDays as IEnumerable<EyeCare.DAL.Model.SP_GetIntervalWorkDays_Result>)
+                                                    {
+                                                        <div id="slot_@item.WorkDayId" class="tab-pane fade">
+                                                            <h4 class="card-title d-flex justify-content-between">
+                                                                <span>Time Slots</span>
+                                                            </h4>
+
+
+                                                            @Html.Action("GetSchedualeByDay", "Doctor", new { id = item.WorkDayId })
+
+                                                        </div>
+
+
+                                                    }
+
+                                                </div>
+                                                <!-- /Schedule Content -->
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- Submit Section -->
+            <div class="submit-section proceed-btn text-right">
+                @*<a  href="@Url.Action("Checkout","Booking")" class="btn btn-primary submit-btn">Continue</a>*@
+                <a href="#" class="btn btn-primary submit-btn" onclick="ContinueBooking()">Continue</a>
+
+            </div>
+            <!-- /Submit Section   data-toggle="modal" data-target="#exampleModal" -->
+
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel" style="color:#0a3d62">Checkout</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <!-- Checkout Form -->
+                <form id="formClient">
+                    <!-- Personal Information -->
+                    <div class="info-widget">
+                        <h4 class="card-title">Enter Your Data</h4>
+                        <div class="container">
+                            <input type="hidden" id="DoctorId" value="@doctor.DoctorId" />
+                            <input type="hidden" id="DayId" value="" />
+                            <input type="hidden" id="BookingDate" value="" />
+                            <div class="form-group card-label col-md-12">
+                                @Html.LabelFor(model => model.ClientName)
+                                @Html.TextBoxFor(model => model.ClientName, new { @class = "form-control" })
+                                @Html.ValidationMessageFor(model => model.ClientName, null, new { @class = "text-danger" })
+                            </div>
+                            <div class="form-group card-label col-md-12">
+                                @Html.LabelFor(model => model.ClientPhone)
+                                @Html.TextBoxFor(model => model.ClientPhone, new { @class = "form-control" })
+                                @Html.ValidationMessageFor(model => model.ClientPhone, null, new { @class = "text-danger" })
+                            </div>
+                            <div class="form-group card-label col-md-12">
+                                @Html.LabelFor(model => model.ClientAddress)
+                                @Html.TextBoxFor(model => model.ClientAddress, new { @class = "form-control" })
+                                @Html.ValidationMessageFor(model => model.ClientAddress, null, new { @class = "text-danger" })
+                            </div>
+                            <div class="form-group card-label col-md-12">
+                                @Html.LabelFor(model => model.Email)
+                                @Html.TextBoxFor(model => model.Email, new { @class = "form-control" })
+                                @Html.ValidationMessageFor(model => model.Email, null, new { @class = "text-danger" })
+                            </div>
+                            <div class="form-group card-label col-md-12">
+                                @Html.LabelFor(model => model.Password)
+                                @Html.PasswordFor(model => model.Password, new { @class = "form-control" })
+                                @Html.ValidationMessageFor(model => model.Password, null, new { @class = "text-danger" })
+                            </div>
+                            <div class="form-group card-label col-md-12">
+                                @Html.LabelFor(model => model.ConfirmPassword)
+                                @Html.PasswordFor(model => model.ConfirmPassword, new { @class = "form-control" })
+                                @Html.ValidationMessageFor(model => model.ConfirmPassword, null, new { @class = "text-danger" })
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- /Personal Information -->
+                </form>
+                <!-- /Checkout Form -->
+            </div>
+            <div class="modal-footer">
+                <button id="btnSave" type="button" class="btn btn-primary">Confirm</button>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+@* ----------------------Success-Model------------------- *@
+<div id="SuccessModel" class="modal">
+    <div class="modal-dialog modal-confirm">
+        <div class="modal-content p-4">
+            <div class="modal-body text-center">
+                <h3>Appointment booked Successfully!</h3>
+                <i class="fas fa-check" style="font-size:25px; background-color:lightgreen; border-radius:50%; padding:20px; color:white"></i>
+                <p>Appointment booked with <strong>Dr.@doctor.DoctorName</strong><br> on <strong id="ConfirmBookingDate"></strong></p>
+                <button class="btn btn-success btn-block" data-dismiss="modal">OK</button>
+            </div>
+        </div>
+    </div>
+</div>
+@section scripts{
+
+    <script>
+
+        $(document).ready(function () {
+            $("#btnSave").click(function () {
+                if (!$("#formClient").valid()) {
+                    return;
+                }
+                SaveClient();
+            });
+        });
+
+        function ContinueBooking() {
+
+            var dayId = $('ul.nav-tabs li a.active').attr('WorkDayId');
+            var bookingDate = $('ul.nav-tabs li a.active').attr('BookingDate');
+
+            $('#DayId').val(dayId);
+            $('#BookingDate').val(bookingDate);
+
+            $('#exampleModal').modal('show');
+
+            //$.ajax({
+            //    url: '/Booking/Checkout',
+            //    type:'POST',
+            //    data: { DoctorId: doctorId, DayId: dayId, BookingDate: bookingDate },
+            //    success: function () {
+
+            //    }
+            //});
+        }
+        //------------Save-Doctor-----------------//
+        function SaveClient() {
+            debugger;
+            var client = {};
+            client.DoctorId = $("#DoctorId").val();
+            client.DayId = $("#DayId").val();
+            client.BookingDate = $("#BookingDate").val();
+            // client.ClientId = $("#ClientId").val();
+            client.ClientName = $('#ClientName').val();
+            client.ClientPhone = $('#ClientPhone').val();
+            client.ClientAddress = $('#ClientAddress').val();
+            client.Email = $('#Email').val();
+            client.Password = $('#Password').val();
+            client.ConfirmPassword = $('#ConfirmPassword').val();
+            $.ajax({
+                url: '/Booking/Add',
+                type: 'POST',
+                data: { Client: client },
+                success: function (data) {
+                    debugger;
+                    if (data.success === true) {
+                        //toastr.success(data.message, 'Success Alert', { timeOut: 3000 });
+                        //alert(data.message);
+                        //resetDoctorModal();
+                        //loadDoctorDetails();
+                        $('#ConfirmBookingDate').text($("#BookingDate").val());
+
+                        $('#SuccessModel').modal('show');
+
+                    }
+                },
+                error: function () {
+                    toastr.error('There is some problem to process your request', 'Error Alert', { timeOut: 3000 });
+                    //alert('There Is Some Problem To Save  Data')
+                }
+            });
+        }
+        //------------Save-Doctor-----------------//
+    </script>
+}

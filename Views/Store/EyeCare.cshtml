@@ -1,0 +1,96 @@
+﻿
+@{
+    ViewBag.Title = "Lens";
+    Layout = "~/Views/Shared/_StoreLayout.cshtml";
+}
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-5 col-lg-4 col-xl-3 theiaStickySidebar">
+
+            <!-- Profile Sidebar -->
+            <div class="profile-sidebar">
+                <div class="widget-profile pro-widget-content">
+                    <div class="profile-info-widget">
+                        <a href="@Url.Action("Glasses","Store")" class="text-center">
+                            <img src="~/images/eye.png" alt="User Image" style="height:120px; width:100%;margin-bottom:20px; padding-top:30px;padding-right:30px">
+                            <div class="profile-det-info">
+                                <h1 style="color:#0a3d62; font-family:Cosmogen">EYE CARE STORE</h1>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="dashboard-widget">
+                    <nav class="dashboard-menu">
+                        <ul>
+                            <li>
+                                <a href="@Url.Action("Glasses","Store")" style="font-size:25px;">
+                                    <i class="fas fa-glasses" style="font-size:20px;"></i>
+                                    <span>Glasses</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="@Url.Action("Lens","Store")" style="font-size:25px;">
+                                    <i class="fas fa-eye" style="font-size:20px;"></i>
+                                    <span>Lenses</span>
+                                </a>
+                            </li>
+                            <li class="active">
+                                <a href="@Url.Action("EyeCare","Store")" style="font-size:25px;">
+                                    <i class="fab fa-battle-net" style="font-size:20px;"></i>
+                                    <span>Eye Care</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <!-- /Profile Sidebar -->
+        </div>
+
+        <div class="col-md-7 col-lg-8 col-xl-9">
+            <!-- Doctor Widget -->
+            <!-- Our  Glasses section -->
+            <div class="glasses" style="padding:0;margin:0">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+                            <div class="glasses_box">
+                                <figure><img src="~/Store/images/len/1113333222-01_180x.jpg" alt="#" /></figure>
+                                <h3><span class="blu">$</span>50</h3>
+                                <p>Sunglasses</p>
+                                <a class="read_more" href="@Url.Action("ProductDetail","Store")">Order Now</a>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+                            <div class="glasses_box">
+                                <figure><img src="~/Store/images/len/1232131111-01_180x.jpg" alt="#" /></figure>
+                                <h3><span class="blu">$</span>50</h3>
+                                <p>Sunglasses</p>
+                                <a class="read_more" href="@Url.Action("ProductDetail","Store")">Order Now</a>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+                            <div class="glasses_box">
+                                <figure><img src="~/Store/images/len/1233311cccc-01_1_11111_180x.jpg" alt="#" /></figure>
+                                <h3><span class="blu">$</span>50</h3>
+                                <p>Sunglasses</p>
+                                <a class="read_more" href="@Url.Action("ProductDetail","Store")">Order Now</a>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+                            <div class="glasses_box">
+                                <figure><img src="~/Store/images/len/12443242-01_720x.jpg" alt="#" /></figure>
+                                <h3><span class="blu">$</span>50</h3>
+                                <p>Sunglasses</p>
+                                <a class="read_more" href="@Url.Action("ProductDetail","Store")">Order Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end Our  Glasses section -->
+            <!-- /Doctor Widget -->
+        </div>
+    </div>
+</div>
+
