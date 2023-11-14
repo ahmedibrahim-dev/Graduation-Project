@@ -1,0 +1,20 @@
+D:\Faculity\Fourth\G_Project\Eye care system\EyeCareSystem\EyeCare.DAL\bin\Debug\EyeCare.DAL.dll
+D:\Faculity\Fourth\G_Project\Eye care system\EyeCareSystem\EyeCare.DAL\bin\Debug\EyeCare.DAL.pdb
+D:\Faculity\Fourth\G_Project\Eye care system\EyeCareSystem\EyeCare.DAL\obj\Debug\EyeCare.DAL.csprojResolveAssemblyReference.cache
+D:\Faculity\Fourth\G_Project\Eye care system\EyeCareSystem\EyeCare.DAL\obj\Debug\EyeCare.DAL.dll
+D:\Faculity\Fourth\G_Project\Eye care system\EyeCareSystem\EyeCare.DAL\obj\Debug\EyeCare.DAL.pdb
+E:\personal\Ibrahem\Eye care system\EyeCareSystem\EyeCare.DAL\bin\Debug\EyeCare.DAL.dll
+E:\personal\Ibrahem\Eye care system\EyeCareSystem\EyeCare.DAL\bin\Debug\EyeCare.DAL.pdb
+E:\personal\Ibrahem\Eye care system\EyeCareSystem\EyeCare.DAL\obj\Debug\EyeCare.DAL.csproj.CoreCompileInputs.cache
+E:\personal\Ibrahem\Eye care system\EyeCareSystem\EyeCare.DAL\obj\Debug\EyeCare.DAL.dll
+E:\personal\Ibrahem\Eye care system\EyeCareSystem\EyeCare.DAL\obj\Debug\EyeCare.DAL.pdb
+D:\Faculity\Fourth\G_Project\Eye care system\Eye care system\EyeCareSystem\EyeCare.DAL\bin\Debug\EyeCare.DAL.dll
+D:\Faculity\Fourth\G_Project\Eye care system\Eye care system\EyeCareSystem\EyeCare.DAL\bin\Debug\EyeCare.DAL.pdb
+D:\Faculity\Fourth\G_Project\Eye care system\Eye care system\EyeCareSystem\EyeCare.DAL\obj\Debug\EyeCare.DAL.csprojResolveAssemblyReference.cache
+D:\Faculity\Fourth\G_Project\Eye care system\Eye care system\EyeCareSystem\EyeCare.DAL\obj\Debug\EyeCare.DAL.dll
+D:\Faculity\Fourth\G_Project\Eye care system\Eye care system\EyeCareSystem\EyeCare.DAL\obj\Debug\EyeCare.DAL.pdb
+D:\Faculity\Fourth\G_Project\Eye care system\Eye care system\EyeCareSystem\EyeCare.DAL\bin\Debug\EyeCare.DAL.dll.config
+D:\Faculity\Fourth\G_Project\Eye care system\Eye care system\EyeCareSystem\EyeCare.DAL\bin\Debug\EntityFramework.dll
+D:\Faculity\Fourth\G_Project\Eye care system\Eye care system\EyeCareSystem\EyeCare.DAL\bin\Debug\EntityFramework.SqlServer.dll
+D:\Faculity\Fourth\G_Project\Eye care system\Eye care system\EyeCareSystem\EyeCare.DAL\bin\Debug\EntityFramework.xml
+D:\Faculity\Fourth\G_Project\Eye care system\Eye care system\EyeCareSystem\EyeCare.DAL\bin\Debug\EntityFramework.SqlServer.xml
