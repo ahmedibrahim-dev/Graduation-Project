@@ -1,0 +1,254 @@
+D:\Faculity\Fourth\G_Project\Eye care system\EyeCareSystem\EyeCare.Web\bin\ApplicationInsights.config
+D:\Faculity\Fourth\G_Project\Eye care system\EyeCareSystem\EyeCare.Web\bin\roslyn\csc.exe
+D:\Faculity\Fourth\G_Project\Eye care system\EyeCareSystem\EyeCare.Web\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Faculity\Fourth\G_Project\Eye care system\EyeCareSystem\EyeCare.Web\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Faculity\Fourth\G_Project\Eye care system\EyeCareSystem\EyeCare.Web\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Faculity\Fourth\G_Project\Eye care system\EyeCareSystem\EyeCare.Web\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Faculity\Fourth\G_Project\Eye care system\EyeCareSystem\EyeCare.Web\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Faculity\Fourth\G_Project\Eye care system\EyeCareSystem\EyeCare.Web\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Faculity\Fourth\G_Project\Eye care system\EyeCareSystem\EyeCare.Web\bin\roslyn\System.Collections.Immutable.dll
+D:\Faculity\Fourth\G_Project\Eye care system\EyeCareSystem\EyeCare.Web\bin\roslyn\System.Reflection.Metadata.dll
+D:\Faculity\Fourth\G_Project\Eye care system\EyeCareSystem\EyeCare.Web\bin\roslyn\vbc.exe
+D:\Faculity\Fourth\G_Project\Eye care system\EyeCareSystem\EyeCare.Web\bin\roslyn\VBCSCompiler.exe
+D:\Faculity\Fourth\G_Project\Eye care system\EyeCareSystem\EyeCare.Web\bin\roslyn\VBCSCompiler.exe.config
+D:\Faculity\Fourth\G_Project\Eye care system\EyeCareSystem\EyeCare.Web\bin\EyeCare.Web.dll.config
+D:\Faculity\Fourth\G_Project\Eye care system\EyeCareSystem\EyeCare.Web\bin\EyeCare.Web.dll
+D:\Faculity\Fourth\G_Project\Eye care system\EyeCareSystem\EyeCare.Web\bin\EyeCare.Web.pdb
+D:\Faculity\Fourth\G_Project\Eye care system\EyeCareSystem\EyeCare.Web\bin\Antlr3.Runtime.dll
+D:\Faculity\Fourth\G_Project\Eye care system\EyeCareSystem\EyeCare.Web\bin\EntityFramework.dll
+D:\Faculity\Fourth\G_Project\Eye care system\EyeCareSystem\EyeCare.Web\bin\EntityFramework.SqlServer.dll
+D:\Faculity\Fourth\G_Project\Eye care system\EyeCareSystem\EyeCare.Web\bin\EyeCare.BLL.dll
+D:\Faculity\Fourth\G_Project\Eye care system\EyeCareSystem\EyeCare.Web\bin\Microsoft.AI.Agent.Intercept.dll
+D:\Faculity\Fourth\G_Project\Eye care system\EyeCareSystem\EyeCare.Web\bin\Microsoft.AI.DependencyCollector.dll
+D:\Faculity\Fourth\G_Project\Eye care system\EyeCareSystem\EyeCare.Web\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\Faculity\Fourth\G_Project\Eye care system\EyeCareSystem\EyeCare.Web\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\Faculity\Fourth\G_Project\Eye care system\EyeCareSystem\EyeCare.Web\bin\Microsoft.AI.Web.dll
+D:\Faculity\Fourth\G_Project\Eye care system\EyeCareSystem\EyeCare.Web\bin\Microsoft.AI.WindowsServer.dll
+D:\Faculity\Fourth\G_Project\Eye care system\EyeCareSystem\EyeCare.Web\bin\Microsoft.ApplicationInsights.dll
+D:\Faculity\Fourth\G_Project\Eye care system\EyeCareSystem\EyeCare.Web\bin\Microsoft.AspNet.Identity.Core.dll
+D:\Faculity\Fourth\G_Project\Eye care system\EyeCareSystem\EyeCare.Web\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\Faculity\Fourth\G_Project\Eye care system\EyeCareSystem\EyeCare.Web\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\Faculity\Fourth\G_Project\Eye care system\EyeCareSystem\EyeCare.Web\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Faculity\Fourth\G_Project\Eye care system\EyeCareSystem\EyeCare.Web\bin\Microsoft.Owin.dll
+D:\Faculity\Fourth\G_Project\Eye care system\EyeCareSystem\EyeCare.Web\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\Faculity\Fourth\G_Project\Eye care system\EyeCareSystem\EyeCare.Web\bin\Microsoft.Owin.Security.Cookies.dll
+D:\Faculity\Fourth\G_Project\Eye care system\EyeCareSystem\EyeCare.Web\bin\Microsoft.Owin.Security.dll
+D:\Faculity\Fourth\G_Project\Eye care system\EyeCareSystem\EyeCare.Web\bin\Microsoft.Owin.Security.Facebook.dll
+D:\Faculity\Fourth\G_Project\Eye care system\EyeCareSystem\EyeCare.Web\bin\Microsoft.Owin.Security.Google.dll
+D:\Faculity\Fourth\G_Project\Eye care system\EyeCareSystem\EyeCare.Web\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\Faculity\Fourth\G_Project\Eye care system\EyeCareSystem\EyeCare.Web\bin\Microsoft.Owin.Security.OAuth.dll
+D:\Faculity\Fourth\G_Project\Eye care system\EyeCareSystem\EyeCare.Web\bin\Microsoft.Owin.Security.Twitter.dll
+D:\Faculity\Fourth\G_Project\Eye care system\EyeCareSystem\EyeCare.Web\bin\Microsoft.Web.Infrastructure.dll
+D:\Faculity\Fourth\G_Project\Eye care system\EyeCareSystem\EyeCare.Web\bin\Newtonsoft.Json.dll
+D:\Faculity\Fourth\G_Project\Eye care system\EyeCareSystem\EyeCare.Web\bin\Owin.dll
+D:\Faculity\Fourth\G_Project\Eye care system\EyeCareSystem\EyeCare.Web\bin\System.Web.Helpers.dll
+D:\Faculity\Fourth\G_Project\Eye care system\EyeCareSystem\EyeCare.Web\bin\System.Web.Mvc.dll
+D:\Faculity\Fourth\G_Project\Eye care system\EyeCareSystem\EyeCare.Web\bin\System.Web.Optimization.dll
+D:\Faculity\Fourth\G_Project\Eye care system\EyeCareSystem\EyeCare.Web\bin\System.Web.Razor.dll
+D:\Faculity\Fourth\G_Project\Eye care system\EyeCareSystem\EyeCare.Web\bin\System.Web.WebPages.Deployment.dll
+D:\Faculity\Fourth\G_Project\Eye care system\EyeCareSystem\EyeCare.Web\bin\System.Web.WebPages.dll
+D:\Faculity\Fourth\G_Project\Eye care system\EyeCareSystem\EyeCare.Web\bin\System.Web.WebPages.Razor.dll
+D:\Faculity\Fourth\G_Project\Eye care system\EyeCareSystem\EyeCare.Web\bin\WebGrease.dll
+D:\Faculity\Fourth\G_Project\Eye care system\EyeCareSystem\EyeCare.Web\bin\EyeCare.BLL.pdb
+D:\Faculity\Fourth\G_Project\Eye care system\EyeCareSystem\EyeCare.Web\bin\Microsoft.AI.DependencyCollector.xml
+D:\Faculity\Fourth\G_Project\Eye care system\EyeCareSystem\EyeCare.Web\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\Faculity\Fourth\G_Project\Eye care system\EyeCareSystem\EyeCare.Web\bin\Microsoft.AI.Web.xml
+D:\Faculity\Fourth\G_Project\Eye care system\EyeCareSystem\EyeCare.Web\bin\Microsoft.AI.WindowsServer.xml
+D:\Faculity\Fourth\G_Project\Eye care system\EyeCareSystem\EyeCare.Web\bin\Microsoft.ApplicationInsights.xml
+D:\Faculity\Fourth\G_Project\Eye care system\EyeCareSystem\EyeCare.Web\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Faculity\Fourth\G_Project\Eye care system\EyeCareSystem\EyeCare.Web\bin\System.Web.Helpers.xml
+D:\Faculity\Fourth\G_Project\Eye care system\EyeCareSystem\EyeCare.Web\bin\System.Web.Mvc.xml
+D:\Faculity\Fourth\G_Project\Eye care system\EyeCareSystem\EyeCare.Web\bin\System.Web.Optimization.xml
+D:\Faculity\Fourth\G_Project\Eye care system\EyeCareSystem\EyeCare.Web\bin\System.Web.Razor.xml
+D:\Faculity\Fourth\G_Project\Eye care system\EyeCareSystem\EyeCare.Web\bin\System.Web.WebPages.xml
+D:\Faculity\Fourth\G_Project\Eye care system\EyeCareSystem\EyeCare.Web\bin\System.Web.WebPages.Deployment.xml
+D:\Faculity\Fourth\G_Project\Eye care system\EyeCareSystem\EyeCare.Web\bin\System.Web.WebPages.Razor.xml
+D:\Faculity\Fourth\G_Project\Eye care system\EyeCareSystem\EyeCare.Web\bin\Antlr3.Runtime.pdb
+D:\Faculity\Fourth\G_Project\Eye care system\EyeCareSystem\EyeCare.Web\bin\Newtonsoft.Json.xml
+D:\Faculity\Fourth\G_Project\Eye care system\EyeCareSystem\EyeCare.Web\bin\EntityFramework.xml
+D:\Faculity\Fourth\G_Project\Eye care system\EyeCareSystem\EyeCare.Web\bin\EntityFramework.SqlServer.xml
+D:\Faculity\Fourth\G_Project\Eye care system\EyeCareSystem\EyeCare.Web\bin\Microsoft.AspNet.Identity.Core.xml
+D:\Faculity\Fourth\G_Project\Eye care system\EyeCareSystem\EyeCare.Web\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\Faculity\Fourth\G_Project\Eye care system\EyeCareSystem\EyeCare.Web\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\Faculity\Fourth\G_Project\Eye care system\EyeCareSystem\EyeCare.Web\bin\Microsoft.Owin.xml
+D:\Faculity\Fourth\G_Project\Eye care system\EyeCareSystem\EyeCare.Web\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\Faculity\Fourth\G_Project\Eye care system\EyeCareSystem\EyeCare.Web\bin\Microsoft.Owin.Security.xml
+D:\Faculity\Fourth\G_Project\Eye care system\EyeCareSystem\EyeCare.Web\bin\Microsoft.Owin.Security.Facebook.xml
+D:\Faculity\Fourth\G_Project\Eye care system\EyeCareSystem\EyeCare.Web\bin\Microsoft.Owin.Security.Cookies.xml
+D:\Faculity\Fourth\G_Project\Eye care system\EyeCareSystem\EyeCare.Web\bin\Microsoft.Owin.Security.OAuth.xml
+D:\Faculity\Fourth\G_Project\Eye care system\EyeCareSystem\EyeCare.Web\bin\Microsoft.Owin.Security.Google.xml
+D:\Faculity\Fourth\G_Project\Eye care system\EyeCareSystem\EyeCare.Web\bin\Microsoft.Owin.Security.Twitter.xml
+D:\Faculity\Fourth\G_Project\Eye care system\EyeCareSystem\EyeCare.Web\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\Faculity\Fourth\G_Project\Eye care system\EyeCareSystem\EyeCare.Web\obj\Debug\EyeCare.Web.csprojResolveAssemblyReference.cache
+D:\Faculity\Fourth\G_Project\Eye care system\EyeCareSystem\EyeCare.Web\obj\Debug\EyeCare.Web.dll
+D:\Faculity\Fourth\G_Project\Eye care system\EyeCareSystem\EyeCare.Web\obj\Debug\EyeCare.Web.pdb
+E:\personal\Ibrahem\Eye care system\EyeCareSystem\EyeCare.Web\bin\ApplicationInsights.config
+E:\personal\Ibrahem\Eye care system\EyeCareSystem\EyeCare.Web\bin\roslyn\csc.exe
+E:\personal\Ibrahem\Eye care system\EyeCareSystem\EyeCare.Web\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\personal\Ibrahem\Eye care system\EyeCareSystem\EyeCare.Web\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\personal\Ibrahem\Eye care system\EyeCareSystem\EyeCare.Web\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\personal\Ibrahem\Eye care system\EyeCareSystem\EyeCare.Web\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\personal\Ibrahem\Eye care system\EyeCareSystem\EyeCare.Web\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\personal\Ibrahem\Eye care system\EyeCareSystem\EyeCare.Web\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\personal\Ibrahem\Eye care system\EyeCareSystem\EyeCare.Web\bin\roslyn\System.Collections.Immutable.dll
+E:\personal\Ibrahem\Eye care system\EyeCareSystem\EyeCare.Web\bin\roslyn\System.Reflection.Metadata.dll
+E:\personal\Ibrahem\Eye care system\EyeCareSystem\EyeCare.Web\bin\roslyn\vbc.exe
+E:\personal\Ibrahem\Eye care system\EyeCareSystem\EyeCare.Web\bin\roslyn\VBCSCompiler.exe
+E:\personal\Ibrahem\Eye care system\EyeCareSystem\EyeCare.Web\bin\roslyn\VBCSCompiler.exe.config
+E:\personal\Ibrahem\Eye care system\EyeCareSystem\EyeCare.Web\bin\EyeCare.Web.dll.config
+E:\personal\Ibrahem\Eye care system\EyeCareSystem\EyeCare.Web\bin\EyeCare.Web.dll
+E:\personal\Ibrahem\Eye care system\EyeCareSystem\EyeCare.Web\bin\EyeCare.Web.pdb
+E:\personal\Ibrahem\Eye care system\EyeCareSystem\EyeCare.Web\bin\Antlr3.Runtime.dll
+E:\personal\Ibrahem\Eye care system\EyeCareSystem\EyeCare.Web\bin\EntityFramework.dll
+E:\personal\Ibrahem\Eye care system\EyeCareSystem\EyeCare.Web\bin\EntityFramework.SqlServer.dll
+E:\personal\Ibrahem\Eye care system\EyeCareSystem\EyeCare.Web\bin\EyeCare.BLL.dll
+E:\personal\Ibrahem\Eye care system\EyeCareSystem\EyeCare.Web\bin\Microsoft.AI.Agent.Intercept.dll
+E:\personal\Ibrahem\Eye care system\EyeCareSystem\EyeCare.Web\bin\Microsoft.AI.DependencyCollector.dll
+E:\personal\Ibrahem\Eye care system\EyeCareSystem\EyeCare.Web\bin\Microsoft.AI.PerfCounterCollector.dll
+E:\personal\Ibrahem\Eye care system\EyeCareSystem\EyeCare.Web\bin\Microsoft.AI.ServerTelemetryChannel.dll
+E:\personal\Ibrahem\Eye care system\EyeCareSystem\EyeCare.Web\bin\Microsoft.AI.Web.dll
+E:\personal\Ibrahem\Eye care system\EyeCareSystem\EyeCare.Web\bin\Microsoft.AI.WindowsServer.dll
+E:\personal\Ibrahem\Eye care system\EyeCareSystem\EyeCare.Web\bin\Microsoft.ApplicationInsights.dll
+E:\personal\Ibrahem\Eye care system\EyeCareSystem\EyeCare.Web\bin\Microsoft.AspNet.Identity.Core.dll
+E:\personal\Ibrahem\Eye care system\EyeCareSystem\EyeCare.Web\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+E:\personal\Ibrahem\Eye care system\EyeCareSystem\EyeCare.Web\bin\Microsoft.AspNet.Identity.Owin.dll
+E:\personal\Ibrahem\Eye care system\EyeCareSystem\EyeCare.Web\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\personal\Ibrahem\Eye care system\EyeCareSystem\EyeCare.Web\bin\Microsoft.Owin.dll
+E:\personal\Ibrahem\Eye care system\EyeCareSystem\EyeCare.Web\bin\Microsoft.Owin.Host.SystemWeb.dll
+E:\personal\Ibrahem\Eye care system\EyeCareSystem\EyeCare.Web\bin\Microsoft.Owin.Security.Cookies.dll
+E:\personal\Ibrahem\Eye care system\EyeCareSystem\EyeCare.Web\bin\Microsoft.Owin.Security.dll
+E:\personal\Ibrahem\Eye care system\EyeCareSystem\EyeCare.Web\bin\Microsoft.Owin.Security.Facebook.dll
+E:\personal\Ibrahem\Eye care system\EyeCareSystem\EyeCare.Web\bin\Microsoft.Owin.Security.Google.dll
+E:\personal\Ibrahem\Eye care system\EyeCareSystem\EyeCare.Web\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+E:\personal\Ibrahem\Eye care system\EyeCareSystem\EyeCare.Web\bin\Microsoft.Owin.Security.OAuth.dll
+E:\personal\Ibrahem\Eye care system\EyeCareSystem\EyeCare.Web\bin\Microsoft.Owin.Security.Twitter.dll
+E:\personal\Ibrahem\Eye care system\EyeCareSystem\EyeCare.Web\bin\Microsoft.Web.Infrastructure.dll
+E:\personal\Ibrahem\Eye care system\EyeCareSystem\EyeCare.Web\bin\Newtonsoft.Json.dll
+E:\personal\Ibrahem\Eye care system\EyeCareSystem\EyeCare.Web\bin\Owin.dll
+E:\personal\Ibrahem\Eye care system\EyeCareSystem\EyeCare.Web\bin\System.Web.Helpers.dll
+E:\personal\Ibrahem\Eye care system\EyeCareSystem\EyeCare.Web\bin\System.Web.Mvc.dll
+E:\personal\Ibrahem\Eye care system\EyeCareSystem\EyeCare.Web\bin\System.Web.Optimization.dll
+E:\personal\Ibrahem\Eye care system\EyeCareSystem\EyeCare.Web\bin\System.Web.Razor.dll
+E:\personal\Ibrahem\Eye care system\EyeCareSystem\EyeCare.Web\bin\System.Web.WebPages.Deployment.dll
+E:\personal\Ibrahem\Eye care system\EyeCareSystem\EyeCare.Web\bin\System.Web.WebPages.dll
+E:\personal\Ibrahem\Eye care system\EyeCareSystem\EyeCare.Web\bin\System.Web.WebPages.Razor.dll
+E:\personal\Ibrahem\Eye care system\EyeCareSystem\EyeCare.Web\bin\WebGrease.dll
+E:\personal\Ibrahem\Eye care system\EyeCareSystem\EyeCare.Web\bin\EyeCare.BLL.pdb
+E:\personal\Ibrahem\Eye care system\EyeCareSystem\EyeCare.Web\bin\Microsoft.AI.DependencyCollector.xml
+E:\personal\Ibrahem\Eye care system\EyeCareSystem\EyeCare.Web\bin\Microsoft.AI.ServerTelemetryChannel.xml
+E:\personal\Ibrahem\Eye care system\EyeCareSystem\EyeCare.Web\bin\Microsoft.AI.Web.xml
+E:\personal\Ibrahem\Eye care system\EyeCareSystem\EyeCare.Web\bin\Microsoft.AI.WindowsServer.xml
+E:\personal\Ibrahem\Eye care system\EyeCareSystem\EyeCare.Web\bin\Microsoft.ApplicationInsights.xml
+E:\personal\Ibrahem\Eye care system\EyeCareSystem\EyeCare.Web\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\personal\Ibrahem\Eye care system\EyeCareSystem\EyeCare.Web\bin\System.Web.Helpers.xml
+E:\personal\Ibrahem\Eye care system\EyeCareSystem\EyeCare.Web\bin\System.Web.Mvc.xml
+E:\personal\Ibrahem\Eye care system\EyeCareSystem\EyeCare.Web\bin\System.Web.Optimization.xml
+E:\personal\Ibrahem\Eye care system\EyeCareSystem\EyeCare.Web\bin\System.Web.Razor.xml
+E:\personal\Ibrahem\Eye care system\EyeCareSystem\EyeCare.Web\bin\System.Web.WebPages.xml
+E:\personal\Ibrahem\Eye care system\EyeCareSystem\EyeCare.Web\bin\System.Web.WebPages.Deployment.xml
+E:\personal\Ibrahem\Eye care system\EyeCareSystem\EyeCare.Web\bin\System.Web.WebPages.Razor.xml
+E:\personal\Ibrahem\Eye care system\EyeCareSystem\EyeCare.Web\bin\Antlr3.Runtime.pdb
+E:\personal\Ibrahem\Eye care system\EyeCareSystem\EyeCare.Web\bin\Newtonsoft.Json.xml
+E:\personal\Ibrahem\Eye care system\EyeCareSystem\EyeCare.Web\bin\EntityFramework.xml
+E:\personal\Ibrahem\Eye care system\EyeCareSystem\EyeCare.Web\bin\EntityFramework.SqlServer.xml
+E:\personal\Ibrahem\Eye care system\EyeCareSystem\EyeCare.Web\bin\Microsoft.AspNet.Identity.Core.xml
+E:\personal\Ibrahem\Eye care system\EyeCareSystem\EyeCare.Web\bin\Microsoft.AspNet.Identity.Owin.xml
+E:\personal\Ibrahem\Eye care system\EyeCareSystem\EyeCare.Web\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+E:\personal\Ibrahem\Eye care system\EyeCareSystem\EyeCare.Web\bin\Microsoft.Owin.xml
+E:\personal\Ibrahem\Eye care system\EyeCareSystem\EyeCare.Web\bin\Microsoft.Owin.Host.SystemWeb.xml
+E:\personal\Ibrahem\Eye care system\EyeCareSystem\EyeCare.Web\bin\Microsoft.Owin.Security.xml
+E:\personal\Ibrahem\Eye care system\EyeCareSystem\EyeCare.Web\bin\Microsoft.Owin.Security.Facebook.xml
+E:\personal\Ibrahem\Eye care system\EyeCareSystem\EyeCare.Web\bin\Microsoft.Owin.Security.Cookies.xml
+E:\personal\Ibrahem\Eye care system\EyeCareSystem\EyeCare.Web\bin\Microsoft.Owin.Security.OAuth.xml
+E:\personal\Ibrahem\Eye care system\EyeCareSystem\EyeCare.Web\bin\Microsoft.Owin.Security.Google.xml
+E:\personal\Ibrahem\Eye care system\EyeCareSystem\EyeCare.Web\bin\Microsoft.Owin.Security.Twitter.xml
+E:\personal\Ibrahem\Eye care system\EyeCareSystem\EyeCare.Web\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+E:\personal\Ibrahem\Eye care system\EyeCareSystem\EyeCare.Web\obj\Debug\EyeCare.Web.csprojAssemblyReference.cache
+E:\personal\Ibrahem\Eye care system\EyeCareSystem\EyeCare.Web\obj\Debug\EyeCare.Web.csproj.CoreCompileInputs.cache
+E:\personal\Ibrahem\Eye care system\EyeCareSystem\EyeCare.Web\obj\Debug\EyeCare.Web.csproj.CopyComplete
+E:\personal\Ibrahem\Eye care system\EyeCareSystem\EyeCare.Web\obj\Debug\EyeCare.Web.dll
+E:\personal\Ibrahem\Eye care system\EyeCareSystem\EyeCare.Web\obj\Debug\EyeCare.Web.pdb
+D:\Faculity\Fourth\G_Project\Eye care system\Eye care system\EyeCareSystem\EyeCare.Web\bin\ApplicationInsights.config
+D:\Faculity\Fourth\G_Project\Eye care system\Eye care system\EyeCareSystem\EyeCare.Web\bin\roslyn\csc.exe
+D:\Faculity\Fourth\G_Project\Eye care system\Eye care system\EyeCareSystem\EyeCare.Web\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Faculity\Fourth\G_Project\Eye care system\Eye care system\EyeCareSystem\EyeCare.Web\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Faculity\Fourth\G_Project\Eye care system\Eye care system\EyeCareSystem\EyeCare.Web\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Faculity\Fourth\G_Project\Eye care system\Eye care system\EyeCareSystem\EyeCare.Web\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Faculity\Fourth\G_Project\Eye care system\Eye care system\EyeCareSystem\EyeCare.Web\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Faculity\Fourth\G_Project\Eye care system\Eye care system\EyeCareSystem\EyeCare.Web\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Faculity\Fourth\G_Project\Eye care system\Eye care system\EyeCareSystem\EyeCare.Web\bin\roslyn\System.Collections.Immutable.dll
+D:\Faculity\Fourth\G_Project\Eye care system\Eye care system\EyeCareSystem\EyeCare.Web\bin\roslyn\System.Reflection.Metadata.dll
+D:\Faculity\Fourth\G_Project\Eye care system\Eye care system\EyeCareSystem\EyeCare.Web\bin\roslyn\vbc.exe
+D:\Faculity\Fourth\G_Project\Eye care system\Eye care system\EyeCareSystem\EyeCare.Web\bin\roslyn\VBCSCompiler.exe
+D:\Faculity\Fourth\G_Project\Eye care system\Eye care system\EyeCareSystem\EyeCare.Web\bin\roslyn\VBCSCompiler.exe.config
+D:\Faculity\Fourth\G_Project\Eye care system\Eye care system\EyeCareSystem\EyeCare.Web\bin\EyeCare.Web.dll.config
+D:\Faculity\Fourth\G_Project\Eye care system\Eye care system\EyeCareSystem\EyeCare.Web\bin\EyeCare.Web.dll
+D:\Faculity\Fourth\G_Project\Eye care system\Eye care system\EyeCareSystem\EyeCare.Web\bin\EyeCare.Web.pdb
+D:\Faculity\Fourth\G_Project\Eye care system\Eye care system\EyeCareSystem\EyeCare.Web\bin\Antlr3.Runtime.dll
+D:\Faculity\Fourth\G_Project\Eye care system\Eye care system\EyeCareSystem\EyeCare.Web\bin\EntityFramework.dll
+D:\Faculity\Fourth\G_Project\Eye care system\Eye care system\EyeCareSystem\EyeCare.Web\bin\EntityFramework.SqlServer.dll
+D:\Faculity\Fourth\G_Project\Eye care system\Eye care system\EyeCareSystem\EyeCare.Web\bin\EyeCare.BLL.dll
+D:\Faculity\Fourth\G_Project\Eye care system\Eye care system\EyeCareSystem\EyeCare.Web\bin\Microsoft.AI.Agent.Intercept.dll
+D:\Faculity\Fourth\G_Project\Eye care system\Eye care system\EyeCareSystem\EyeCare.Web\bin\Microsoft.AI.DependencyCollector.dll
+D:\Faculity\Fourth\G_Project\Eye care system\Eye care system\EyeCareSystem\EyeCare.Web\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\Faculity\Fourth\G_Project\Eye care system\Eye care system\EyeCareSystem\EyeCare.Web\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\Faculity\Fourth\G_Project\Eye care system\Eye care system\EyeCareSystem\EyeCare.Web\bin\Microsoft.AI.Web.dll
+D:\Faculity\Fourth\G_Project\Eye care system\Eye care system\EyeCareSystem\EyeCare.Web\bin\Microsoft.AI.WindowsServer.dll
+D:\Faculity\Fourth\G_Project\Eye care system\Eye care system\EyeCareSystem\EyeCare.Web\bin\Microsoft.ApplicationInsights.dll
+D:\Faculity\Fourth\G_Project\Eye care system\Eye care system\EyeCareSystem\EyeCare.Web\bin\Microsoft.AspNet.Identity.Core.dll
+D:\Faculity\Fourth\G_Project\Eye care system\Eye care system\EyeCareSystem\EyeCare.Web\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\Faculity\Fourth\G_Project\Eye care system\Eye care system\EyeCareSystem\EyeCare.Web\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\Faculity\Fourth\G_Project\Eye care system\Eye care system\EyeCareSystem\EyeCare.Web\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Faculity\Fourth\G_Project\Eye care system\Eye care system\EyeCareSystem\EyeCare.Web\bin\Microsoft.Owin.dll
+D:\Faculity\Fourth\G_Project\Eye care system\Eye care system\EyeCareSystem\EyeCare.Web\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\Faculity\Fourth\G_Project\Eye care system\Eye care system\EyeCareSystem\EyeCare.Web\bin\Microsoft.Owin.Security.Cookies.dll
+D:\Faculity\Fourth\G_Project\Eye care system\Eye care system\EyeCareSystem\EyeCare.Web\bin\Microsoft.Owin.Security.dll
+D:\Faculity\Fourth\G_Project\Eye care system\Eye care system\EyeCareSystem\EyeCare.Web\bin\Microsoft.Owin.Security.Facebook.dll
+D:\Faculity\Fourth\G_Project\Eye care system\Eye care system\EyeCareSystem\EyeCare.Web\bin\Microsoft.Owin.Security.Google.dll
+D:\Faculity\Fourth\G_Project\Eye care system\Eye care system\EyeCareSystem\EyeCare.Web\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\Faculity\Fourth\G_Project\Eye care system\Eye care system\EyeCareSystem\EyeCare.Web\bin\Microsoft.Owin.Security.OAuth.dll
+D:\Faculity\Fourth\G_Project\Eye care system\Eye care system\EyeCareSystem\EyeCare.Web\bin\Microsoft.Owin.Security.Twitter.dll
+D:\Faculity\Fourth\G_Project\Eye care system\Eye care system\EyeCareSystem\EyeCare.Web\bin\Microsoft.Web.Infrastructure.dll
+D:\Faculity\Fourth\G_Project\Eye care system\Eye care system\EyeCareSystem\EyeCare.Web\bin\Newtonsoft.Json.dll
+D:\Faculity\Fourth\G_Project\Eye care system\Eye care system\EyeCareSystem\EyeCare.Web\bin\Owin.dll
+D:\Faculity\Fourth\G_Project\Eye care system\Eye care system\EyeCareSystem\EyeCare.Web\bin\System.Web.Helpers.dll
+D:\Faculity\Fourth\G_Project\Eye care system\Eye care system\EyeCareSystem\EyeCare.Web\bin\System.Web.Mvc.dll
+D:\Faculity\Fourth\G_Project\Eye care system\Eye care system\EyeCareSystem\EyeCare.Web\bin\System.Web.Optimization.dll
+D:\Faculity\Fourth\G_Project\Eye care system\Eye care system\EyeCareSystem\EyeCare.Web\bin\System.Web.Razor.dll
+D:\Faculity\Fourth\G_Project\Eye care system\Eye care system\EyeCareSystem\EyeCare.Web\bin\System.Web.WebPages.Deployment.dll
+D:\Faculity\Fourth\G_Project\Eye care system\Eye care system\EyeCareSystem\EyeCare.Web\bin\System.Web.WebPages.dll
+D:\Faculity\Fourth\G_Project\Eye care system\Eye care system\EyeCareSystem\EyeCare.Web\bin\System.Web.WebPages.Razor.dll
+D:\Faculity\Fourth\G_Project\Eye care system\Eye care system\EyeCareSystem\EyeCare.Web\bin\WebGrease.dll
+D:\Faculity\Fourth\G_Project\Eye care system\Eye care system\EyeCareSystem\EyeCare.Web\bin\EyeCare.BLL.pdb
+D:\Faculity\Fourth\G_Project\Eye care system\Eye care system\EyeCareSystem\EyeCare.Web\bin\Microsoft.AI.DependencyCollector.xml
+D:\Faculity\Fourth\G_Project\Eye care system\Eye care system\EyeCareSystem\EyeCare.Web\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\Faculity\Fourth\G_Project\Eye care system\Eye care system\EyeCareSystem\EyeCare.Web\bin\Microsoft.AI.Web.xml
+D:\Faculity\Fourth\G_Project\Eye care system\Eye care system\EyeCareSystem\EyeCare.Web\bin\Microsoft.AI.WindowsServer.xml
+D:\Faculity\Fourth\G_Project\Eye care system\Eye care system\EyeCareSystem\EyeCare.Web\bin\Microsoft.ApplicationInsights.xml
+D:\Faculity\Fourth\G_Project\Eye care system\Eye care system\EyeCareSystem\EyeCare.Web\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Faculity\Fourth\G_Project\Eye care system\Eye care system\EyeCareSystem\EyeCare.Web\bin\System.Web.Helpers.xml
+D:\Faculity\Fourth\G_Project\Eye care system\Eye care system\EyeCareSystem\EyeCare.Web\bin\System.Web.Mvc.xml
+D:\Faculity\Fourth\G_Project\Eye care system\Eye care system\EyeCareSystem\EyeCare.Web\bin\System.Web.Optimization.xml
+D:\Faculity\Fourth\G_Project\Eye care system\Eye care system\EyeCareSystem\EyeCare.Web\bin\System.Web.Razor.xml
+D:\Faculity\Fourth\G_Project\Eye care system\Eye care system\EyeCareSystem\EyeCare.Web\bin\System.Web.WebPages.xml
+D:\Faculity\Fourth\G_Project\Eye care system\Eye care system\EyeCareSystem\EyeCare.Web\bin\System.Web.WebPages.Deployment.xml
+D:\Faculity\Fourth\G_Project\Eye care system\Eye care system\EyeCareSystem\EyeCare.Web\bin\System.Web.WebPages.Razor.xml
+D:\Faculity\Fourth\G_Project\Eye care system\Eye care system\EyeCareSystem\EyeCare.Web\bin\Antlr3.Runtime.pdb
+D:\Faculity\Fourth\G_Project\Eye care system\Eye care system\EyeCareSystem\EyeCare.Web\bin\Newtonsoft.Json.xml
+D:\Faculity\Fourth\G_Project\Eye care system\Eye care system\EyeCareSystem\EyeCare.Web\bin\EntityFramework.xml
+D:\Faculity\Fourth\G_Project\Eye care system\Eye care system\EyeCareSystem\EyeCare.Web\bin\EntityFramework.SqlServer.xml
+D:\Faculity\Fourth\G_Project\Eye care system\Eye care system\EyeCareSystem\EyeCare.Web\bin\Microsoft.AspNet.Identity.Core.xml
+D:\Faculity\Fourth\G_Project\Eye care system\Eye care system\EyeCareSystem\EyeCare.Web\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\Faculity\Fourth\G_Project\Eye care system\Eye care system\EyeCareSystem\EyeCare.Web\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\Faculity\Fourth\G_Project\Eye care system\Eye care system\EyeCareSystem\EyeCare.Web\bin\Microsoft.Owin.xml
+D:\Faculity\Fourth\G_Project\Eye care system\Eye care system\EyeCareSystem\EyeCare.Web\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\Faculity\Fourth\G_Project\Eye care system\Eye care system\EyeCareSystem\EyeCare.Web\bin\Microsoft.Owin.Security.xml
+D:\Faculity\Fourth\G_Project\Eye care system\Eye care system\EyeCareSystem\EyeCare.Web\bin\Microsoft.Owin.Security.Facebook.xml
+D:\Faculity\Fourth\G_Project\Eye care system\Eye care system\EyeCareSystem\EyeCare.Web\bin\Microsoft.Owin.Security.Cookies.xml
+D:\Faculity\Fourth\G_Project\Eye care system\Eye care system\EyeCareSystem\EyeCare.Web\bin\Microsoft.Owin.Security.OAuth.xml
+D:\Faculity\Fourth\G_Project\Eye care system\Eye care system\EyeCareSystem\EyeCare.Web\bin\Microsoft.Owin.Security.Google.xml
+D:\Faculity\Fourth\G_Project\Eye care system\Eye care system\EyeCareSystem\EyeCare.Web\bin\Microsoft.Owin.Security.Twitter.xml
+D:\Faculity\Fourth\G_Project\Eye care system\Eye care system\EyeCareSystem\EyeCare.Web\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\Faculity\Fourth\G_Project\Eye care system\Eye care system\EyeCareSystem\EyeCare.Web\obj\Debug\EyeCare.Web.csprojResolveAssemblyReference.cache
+D:\Faculity\Fourth\G_Project\Eye care system\Eye care system\EyeCareSystem\EyeCare.Web\obj\Debug\EyeCare.Web.dll
+D:\Faculity\Fourth\G_Project\Eye care system\Eye care system\EyeCareSystem\EyeCare.Web\obj\Debug\EyeCare.Web.pdb
